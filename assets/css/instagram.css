@@ -1,0 +1,14 @@
+.vale-presente--img{
+    width: 477px;
+
+}
+.vale-presente{
+    padding: 16px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    font-weight: 200;
+
+}

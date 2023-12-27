@@ -1,0 +1,65 @@
+.cardapio {
+    padding: 0 16px;
+    color: var(--preto);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cardapio_container {
+    background: url('../img/cardapio_bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 0 16px 40px 16px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 600px;
+    min-width: 370px;
+
+}
+
+.cardapio_titulo {
+    color: var(--cinza-escuro);
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+.cardapio_texto {
+    font-size: 13px;
+    width: 243px;
+    margin-bottom: 50px;
+}
+
+.alinhar_direita {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.cardapio_texto p {
+    margin: 0;
+    line-height: 18px;
+}
+
+.cardapio_texto>.bold {
+    margin: 16px 0 4px 0;
+}
+
+.cardapio_img-1 {
+    width: 176px;
+    position: absolute;
+    left: -75px;
+    bottom: 101px;
+    transform: rotate(7.5deg);
+}
+
+.cardapio_img-2 {
+    width: 350px;
+    position: absolute;
+    right: -254px;
+    top: 101px;
+
+}
