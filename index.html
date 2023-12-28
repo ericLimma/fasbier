@@ -29,6 +29,13 @@
         rel="stylesheet">
 
     <link rel="shortcut icon" href="assets/img/favicon/android-chrome-192x192.png" type="image/x-icon">
+    <!-- javaScript -->
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/menu.js"></script>
+    <script defer src="assets/js/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/form.js"></script>
+    <script defer src="assets/js/voltarAoTopo.js"></script>
+
 </head>
 
 <body>
@@ -202,7 +209,7 @@
                                 </div>
                             </article>
 
-                            
+
                         </div>
                     </div>
 
@@ -299,30 +306,31 @@
 
         </section>
         <section class="formulario_section"><!-- Formulário -->
-            <form class="formulario">
+            <form action="https://formsubmit.co/ajax/ericlimma378@gmail.com" method="post" class="formulario" data-form>
                 <h2>Organize seu Evento Aqui</h2>
                 <fieldset class="fieldset">
                     <legend>Dados Pessoais</legend>
 
                     <label for="nome">Nome: </label>
-                    <input class="form_input" type="text" id="nome" placeholder="Digite seu Nome" />
+                    <input class="form_input" type="text" id="nome" name="nome" placeholder="Digite seu Nome" />
 
                     <label for="email">E-mail: </label>
-                    <input class="form_input" autocomplete="email" type="email" id="email"
+                    <input class="form_input" autocomplete="email" type="email" name="email" id="email"
                         placeholder="ex.: meuemail@exemplo.com" />
 
                     <label for="tel">Telefone: </label>
-                    <input class="form_input" autocomplete="tel" type="tel" id="tel" placeholder="(00) 0 0000 - 0000" />
+                    <input class="form_input" autocomplete="tel" type="tel" id="tel" name=telefone"
+                        placeholder="(00) 0 0000 - 0000" />
 
                     <div class="radio_container">
                         <p>Prefiro ser contatado via:</p>
                         <div>
                             <div>
-                                <input type="radio" id="whatsapp" name="contato" value="whatsapp" checked />
+                                <input type="radio" id="whatsapp" name="contato" value="via-whatsapp" checked />
                                 <label for="whatsapp">whatsapp</label>
                             </div>
                             <div>
-                                <input type="radio" id="email-radio" name="contato" value="email-radio" />
+                                <input type="radio" id="contato-email" name="contato" value="via-email" />
                                 <label for="email">e-mail</label>
                             </div>
                         </div>
@@ -352,10 +360,33 @@
                     <label for="mensagem">Sua mensagem: </label>
                     <textarea class="form_input textarea" name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
                 </fieldset>
-                <button class="btn"> <img src="assets/img/icons/enviar.png" alt="enviar">
-
-                    Enviar
-                </button>
+                <button type="submit" class="btn" data-button> <img src="assets/img/icons/enviar.png"
+                        alt="enviar">Enviar</button>
+<!--                 <div class="sucesso">
+                    <img src="assets/img/logo_frase.png" alt="logo fassbier">
+                    <div>
+                        <h4>Sucesso!</h4>
+                        <p>
+                            Seus dados foram enviados com sucesso para o <strong>Fassbier</strong>. Agradecemos o seu contato e estaremos
+                            respondendo o mais breve possível. Enquanto isso, sinta-se à vontade para explorar nosso
+                            menu e descobrir as delícias que aguardam por você no <strong>Fassbier</strong>.
+                        </p>
+                        <p>
+                            Agradecemos por escolher o <strong>Fassbier</strong> e mal podemos esperar para recebê-lo(a) em nosso
+                            restaurante!
+                        </p>
+                    </div>
+                    <div>
+                        <button class="btn btn_cardapio">
+                            <img src="assets/img/icons/menu.png" alt="icone menu">
+                            <p>Cárdapio completo</p>
+                        </button>
+                        <button class="btn btn_voltar">
+                            <img src="assets/img/icons/bac.png" alt="icone menu">
+                            <p>Cárdapio completo</p>
+                        </button>
+                    </div>
+                </div> -->
             </form>
         </section>
         <footer class="footer">
@@ -387,12 +418,6 @@
             <p>Desenvolvido por: Erick Lima</p>
         </div>
     </main>
-    <!-- JavaScript -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/voltarAoTopo.js"></script>
-
 </body>
 
 </html>

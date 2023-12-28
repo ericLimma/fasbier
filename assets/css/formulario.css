@@ -138,3 +138,10 @@ select:-webkit-autofill {
     color: #333 !important;
     /* Cor do texto para legibilidade */
 }
+.sucesso{
+
+
+}
+.sucesso_on{
+    display: flex;
+}
