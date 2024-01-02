@@ -1,6 +1,5 @@
 const toggleMenu = () => {
   const navigation = document.querySelector(".navigation");
-
   const burgerMenu = document.querySelector(".menu-icon");
   const src = burgerMenu.getAttribute("src");
 
@@ -10,7 +9,7 @@ const toggleMenu = () => {
   burgerMenu.setAttribute("src", iconName);
 
   if (!isBurger) {
-    navigation.classList.add("navigation--fadeout");
+    navigation.classList.remove("navigation--fadeout");
     setTimeout(() => {
       navigation.classList.toggle("navigation--open");
     }, 300);
@@ -20,3 +19,13 @@ const toggleMenu = () => {
   }
 };
 
+const closeMenu = () => {
+  const navigation = document.querySelector(".navigation");
+  navigation.classList.remove("navigation--open");
+};
+
+// Adiciona o ouvinte de eventos aos links dentro do menu para fechar o menu ao ser clicado
+const links = document.querySelectorAll('.navigation a');
+links.forEach(link => {
+  link.addEventListener('click', closeMenu);
+});

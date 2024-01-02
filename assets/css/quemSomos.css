@@ -1,0 +1,27 @@
+.sobre {
+    padding: 16px;
+    text-align: justify;
+    width: 370px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.prato {
+    width: 254px;
+    height: 240px;
+    margin-top: 16px;
+
+}
+
+.quem_somos p {
+    margin-bottom: 8px;
+    padding: 8px;
+    text-align: justify;
+}
+
+
+.sobre article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

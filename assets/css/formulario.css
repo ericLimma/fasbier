@@ -138,10 +138,33 @@ select:-webkit-autofill {
     color: #333 !important;
     /* Cor do texto para legibilidade */
 }
-.sucesso{
 
+.sucesso {
+    align-items: center;
+    background: var(--vermelho);
+    border-radius: 16px;
+    display: none;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 16px;
+    padding: 24px;
+    text-align: justify;
+    transition: all .2s ease-in-out;
 
 }
-.sucesso_on{
+
+.sucesso h4 {
+    color: var(--amarelo);
+    font-size: 18px;
+}
+
+.sucesso strong {
+    color: var(--amarelo);
+}
+
+.sucesso_on {
     display: flex;
+
 }

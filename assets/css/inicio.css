@@ -6,12 +6,12 @@
     justify-content: center;
     background: url('../img/capa.png') no-repeat center;
     background-size: cover;
-   /*  box-shadow: inset 0px 35px 30px 0px rgba(0, 0, 0, 0.8), inset 0px -35px 30px 0px rgba(0, 0, 0, 0.8); */
+    /*  box-shadow: inset 0px 35px 30px 0px rgba(0, 0, 0, 0.8), inset 0px -35px 30px 0px rgba(0, 0, 0, 0.8); */
     /* box-shadow: inset [horizontal offset] [vertical offset] [blur radius] [spread radius] [color]; */
 }
 
-.logo  {
-    filter: drop-shadow(5px 5px 2px #000000c7);
+
+.logo__img {
     width: 283px;
 }
 
@@ -36,7 +36,7 @@
     justify-content: center;
 }
 
-.sombra{
+.sombra {
     position: fixed;
     top: 0;
 
