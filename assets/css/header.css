@@ -39,9 +39,21 @@
     z-index: 45;
 }
 
-.social-media svg {
-    width: 32px;
-    height: 32px;
+.social-media-container {
+
+}
+
+.social-media img {
+    width: 36px;
+    height: 36px;
+}
+.social-media {
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    display: block;
+    width: 36px;
+    height: 36px;
 }
 
 .navigation>li {
