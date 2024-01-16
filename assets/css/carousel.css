@@ -25,6 +25,8 @@
   align-items: center;
   text-align: center;
   position: absolute;
+  margin: auto;
+  width: 100%;
   bottom: 0;
   z-index: 10;
 }
@@ -95,7 +97,7 @@
 
 .right-arrow,
 .left-arrow {
-  width: 30px;
+  width: 18px;
 }
 
 .swiper-button-next {
