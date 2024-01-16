@@ -45,3 +45,24 @@
     border-radius: 16px;
     background-color: var(--vermelho);
 }
+
+@media screen and (max-width: 320px) {
+
+  }
+  
+  /* Medium devices */
+  @media screen and (min-width: 768px) {
+    .map iframe {
+        height: 259px;
+        width: 468px;
+
+    }
+    .endereco-bg {
+        width: calc(390px);
+    }
+  }
+  
+  /* Large devices */
+  @media screen and (min-width: 1120px) {
+
+  }
