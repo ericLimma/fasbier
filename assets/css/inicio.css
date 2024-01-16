@@ -15,6 +15,17 @@
     width: 283px;
 }
 
+.logo__box {
+    position: relative;
+}
+
+.logo_frase {
+    width: 162px;
+    position: absolute;
+    top: 71px;
+    left: 10px;
+}
+
 .pirula-container {
     margin-top: 66px;
     display: flex;
@@ -41,7 +52,7 @@
         opacity: 0;
         transform: translateY(-25px);
     }
-    
+
     100% {
         opacity: 1;
         transform: translateY(35px);
