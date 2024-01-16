@@ -9,30 +9,10 @@
     font-size: 40px;
     margin: 0;
     color: var(--amarelo);
+
 }
 
 .festivais_p {
     margin: 0;
 }
 
-.carousel_container {
-    max-width: 1200px;
-    width: 95%;
-}
-
-.slider-wrapper .image-list {
-    display: grid;
-    gap: 18px;
-    font-size: 0;
-    overflow-x: auto;
-    scrollbar-width: none;
-    grid-template-columns: repeat(10, 1fr);
-}
-.slider-wrapper .image-list::-webkit-scrollbar{
-    display: none;
-}
-.slider-wrapper .image-list .image-item {
-    width: 189px;
-    height: 224px;
-    object-fit: cover;
-}

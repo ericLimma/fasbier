@@ -36,8 +36,20 @@
     justify-content: center;
 }
 
-.sombra {
-    position: fixed;
-    top: 0;
+@keyframes aparecerSumir {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(35px);
+    }
+}
 
+.arrow {
+    width: 65px;
+    animation: aparecerSumir 2s infinite;
+    /* 2s é a duração da animação, ajuste conforme necessário */
 }
