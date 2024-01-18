@@ -16,3 +16,15 @@
    max-width: 680px;
 
 }
+@media screen and (max-width: 320px) {
+
+}
+
+/* Medium devices */
+@media screen and (min-width: 768px) {
+   .vale-presente__img{
+    margin-top: -48px;
+    z-index: -1;
+
+}
+}

@@ -64,6 +64,10 @@
 
 }
 
+@media screen and (max-width: 320px) {
+   
+}
+
 @media screen and (min-width: 768px) {
     .cardapio_container {
         width: 875px;
@@ -86,11 +90,12 @@
         left: -6px;
         bottom: 21px;
     }
+
     .cardapio_img-2 {
         width: 400px;
         right: -108px;
     }
-    
+
 }
 
 
