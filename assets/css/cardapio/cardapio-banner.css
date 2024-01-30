@@ -1,0 +1,29 @@
+
+.banner {
+    width: 100vw;
+    max-width: 762px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 8px;
+
+}
+
+.banner_img {
+    max-width: 980px;
+}
+
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.banner_img {
+    width: 100%;
+}

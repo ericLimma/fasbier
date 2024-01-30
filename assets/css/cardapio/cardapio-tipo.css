@@ -1,0 +1,44 @@
+.title {
+    background-color: #BE1E2D;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;    
+    gap: 4px;
+    
+
+}
+
+.title h2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--branco);
+    text-transform: uppercase;
+}
+
+.title h2 span {
+    font-size: 16px;
+    color: var(--amarelo);
+    margin-top: -5px;
+}
+
+.title small {
+    font-size: 8px;
+    text-align: center;
+}
+
+.title-pq {
+    height: 52px !important;
+    margin-bottom: 16px;
+}
+
+.title-pq h2 {
+    font-size: 24px !important;
+}
+.wrap {
+    white-space: wrap !important;
+}

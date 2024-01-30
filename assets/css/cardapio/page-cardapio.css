@@ -2,62 +2,9 @@
     background: url('../../img/banner/cardapio-bg.jpg');
 }
 
-.logo-cardapio img {
-    max-width: 370px;
-    width: 250px;
-    margin: auto;
-}
 
-.mt-32 {
-    margin-top: 32px;
-}
-
-.mt-64 {
-    margin-top: 64px;
-}
-.title-pq{
-    height: 52px !important;
-    margin-bottom: 16px;
-}
-.title-pq h2{
-    font-size: 24px !important;
-}
-
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.title {
-    background-color: #BE1E2D;
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    height: 136px;
-    justify-content: center;
-    gap: 32px;
-
-}
-
-.title h2 {
-    display: flex;
-    flex-direction: column;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    color: var(--branco);
-    text-transform: uppercase;
-}
-
-.title h2 span {
-    font-size: 32px;
-    color: var(--amarelo);
-    margin-top: -10px;
-}
-
-.title small {
-    width: 30%;
+.cardapio-body section {
+    margin-bottom: 0;
 }
 
 .executivo,
@@ -69,60 +16,73 @@
 .risotos,
 .bebidas,
 .sobremesas {
-    padding: 16px;
+    padding: 8px;
+    max-width: 980px;
+    width: 100%;
+    margin-top: 36px;
+    display: flex;
+    column-gap: 8px;
+    margin: auto;
 }
 
+.cardapio-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+.cardapio-item-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 .cardapio-item {
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     padding: 5px 0;
     color: #231E1F;
-    width: 360px;
-    font-weight: 700;
+
 }
 
 
+
 .cardapio-nome {
-    font-size: 20px;
+    font-size: 10px;
+    font-weight: 700;
     font-family: "Barlow Condensed", sans-serif;
     color: #231E1F;
     white-space: nowrap;
     text-transform: uppercase;
 }
 
-.wrap {
-    white-space: wrap !important;
-}
-
 .cardapio-separador {
-    width: 30%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex: 1;
     flex-grow: 1;
-    height: 1px;
-    border-top: 2px dotted #231E1F;
-    margin-top: 10px;
 }
 
 .cardapio-preco {
+    font-weight: 700;
     text-align: right;
-    font-size: 20px;
+    font-size: 10px;
     text-transform: uppercase;
 }
 
 .cardapio-descricao {
-    margin-top: -25px;
-    font-size: 14px;
-    font-family: "Raleway", sans-serif;
+    margin-top: -15px;
+    font-size: 8px;
+    font-family: "Raleway", Arial, sans-serif;
     font-optical-sizing: auto;
     color: #231E1F;
-    font-weight: 700;
+    font-weight: 200;
 }
 
-.img-cardapio {
+F .img-cardapio {
     width: calc(100vw - 32px);
-    max-width: 320px;
+    max-width: 170px;
     margin: 0 auto;
 }
 
@@ -172,10 +132,6 @@
     align-self: flex-end;
 }
 
-.cardapio-item-wrapper {
-    display: flex;
-    flex-direction: column;
-}
 
 .cardapio-pirula p {
     font-family: "Barlow Condensed", sans-serif;
@@ -187,29 +143,28 @@
     margin-top: -05px;
     margin-bottom: 30px;
 }
-.cardapio-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 @media screen and (max-width: 400px) {
-    .executivo {
+    /*     .executivo {
         margin-top: 36px;
         display: flex;
         flex-direction: column;
-   
+
     }
-    .cardapio-container{
+
+    .cardapio-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 }
 
 /* Medium devices */
 @media screen and (min-width: 768px) {
-    .executivo, .entradas {
+
+    .executivo,
+    .entradas {
         margin-top: 36px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -217,25 +172,29 @@
         flex-wrap: nowrap;
         max-width: 980px;
         margin: auto;
-        
+
     }
-    .cardapio-container{
+
+    .cardapio-container {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         max-width: 980px;
     }
-    .cardapio-item-wrapper{
+
+    .cardapio-item-wrapper {
         max-width: 420px;
         margin: 0 auto;
     }
-    .span-1{
+
+    .span-1 {
         grid-column: span 2;
     }
-    .img-cardapio{
+
+    .img-cardapio {
         width: 420px;
         max-width: none;
         margin: 0 auto;
     }
- 
+
 }

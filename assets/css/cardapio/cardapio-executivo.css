@@ -1,0 +1,11 @@
+.executivo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    width: 390px;
+    color: #231E1F;
+}
+.img-cardapio{
+    width: 100%;
+    grid-row: 1 /span 3;
+}

@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/animacoes.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/cardapio/cardapio-tipo.css">
+    <link rel="stylesheet" href="assets/css/cardapio/cardapio-banner.css">
     <link rel="stylesheet" href="assets/css/cardapio/cardapio-header.css">
-    <link rel="stylesheet" href="assets/css/cardapio/banner-swipper.css">
     <link rel="stylesheet" href="assets/css/cardapio/page-cardapio.css">
     <link rel="stylesheet" href="assets/css/cardapio/cardapio-footer.css">
 
@@ -29,9 +29,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/favicon/android-chrome-192x192.png" type="image/x-icon">
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <!-- javaScript -->
     <script defer src="assets/js/menu.js"></script>
     <script defer src="assets/js/voltarAoTopo.js"></script>
@@ -39,7 +36,7 @@
 </head>
 
 <body class="cardapio-body">
-    <header class="header">
+    <!--   <header class="header">
         <div class="menu__wrapper">
             <nav class="menu__bar">
 
@@ -90,19 +87,14 @@
     </header>
     <a target="_blank" href="https://www.instagram.com/restaurantefassbier/" title="social-media" class="social-media">
         <img src="assets/img/icons/instagram.png" alt="instagram-logo">
-    </a>
+    </a> -->
     <main>
-        <section class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/banner/banner-1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/banner/banner-2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/banner/banner-3.jpg" alt=""></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </section>
+        <section class="banner" id="banner">
+            <img class="banner_img" src="assets/img/banner/banner-1.jpg" alt="">
+            <img class="banner_img" src="assets/img/banner/banner-2.jpg" alt="">
+            <img class="banner_img" src="assets/img/banner/banner-3.jpg" alt="">
 
+        </section>
         <section class="cardapio-header">
             <div class="logo-cardapio">
                 <img src="assets/img/logo-menu.png" alt="">
@@ -130,7 +122,7 @@
                 <div class="cardapio-item-wrapper">
                     <div class="cardapio-item">
                         <p class="cardapio-nome">209 - EISBEIN</p>
-                        <div class="cardapio-separador"></div>
+                        <span class="cardapio-separador">...................................................................................</span>
                         <p class="cardapio-preco">R$56,80</p>
                     </div>
                     <p class="cardapio-descricao">Joelho suíno a pururuca servido com batata, chucrute e arroz</p>
@@ -138,7 +130,7 @@
                 <div class="cardapio-item-wrapper">
                     <div class="cardapio-item">
                         <p class="cardapio-nome">140 - BACALHAU GOMES DE SÁ</p>
-                        <div class="cardapio-separador"></div>
+                        <span class="cardapio-separador">......................</span>
                         <p class="cardapio-preco">R$79,00</p>
                     </div>
                     <p class="cardapio-descricao">Lascas de bacalhau salteadas no azeite com batata, azeitonas, cebola e
@@ -147,7 +139,7 @@
                 <div class="cardapio-item-wrapper">
                     <div class="cardapio-item">
                         <p class="cardapio-nome">143 - FILÉ BOVINO GRELHADO</p>
-                        <div class="cardapio-separador"></div>
+                        <span class="cardapio-separador">......................</span>
                         <p class="cardapio-preco">R$54,50</p>
                     </div>
                     <p class="cardapio-descricao">Filé mignon bovino acompanhado de panaché de legumes</p>
@@ -155,7 +147,7 @@
                 <div class="cardapio-item-wrapper">
                     <div class="cardapio-item">
                         <p class="cardapio-nome">144 - TILÁPIA GRELHADA</p>
-                        <div class="cardapio-separador"></div>
+                        <span class="cardapio-separador">......................</span>
                         <p class="cardapio-preco">R$48,90</p>
                     </div>
                     <p class="cardapio-descricao">Filé de tilápia empanada e frita acompanhado de panaché de legumes</p>
@@ -163,7 +155,7 @@
                 <div class="cardapio-item-wrapper">
                     <div class="cardapio-item">
                         <p class="cardapio-nome">158 - weiner schinitzel</p>
-                        <div class="cardapio-separador"></div>
+                        <span class="cardapio-separador">......................</span>
                         <p class="cardapio-preco">R$49,00</p>
                     </div>
                     <p class="cardapio-descricao">copa lombo acompanhada de salada de batata
@@ -171,8 +163,8 @@
                 </div>
                 <div class="cardapio-item-wrapper">
                     <div class="cardapio-item">
-                        <p class="cardapio-nome wrap">102 - tilápia ao molho de camarão</p>
-                        <div class="cardapio-separador"></div>
+                        <p class="cardapio-nome wrap ">102 - tilápia ao molho de camarão</p>
+                        <span class="cardapio-separador">......................</span>
                         <p class="cardapio-preco">R$72,00</p>
                     </div>
                     <p class="cardapio-descricao">filé de tilápia empanada e frita regada ao moloho de camarão
@@ -182,7 +174,7 @@
                 <div class="cardapio-item-wrapper">
                     <div class="cardapio-item">
                         <p class="cardapio-nome">158 - Filé a moda zaratin</p>
-                        <div class="cardapio-separador"></div>
+                        <span class="cardapio-separador">......................</span>
                         <p class="cardapio-preco">R$39,00</p>
                     </div>
                     <p class="cardapio-descricao">Filé mignon bovino acompanhado de fetuccine ao molho branco ao toque
@@ -192,7 +184,7 @@
                 <div class="cardapio-item-wrapper">
                     <div class="cardapio-item">
                         <p class="cardapio-nome">145 - PARMEGIANA BOVINO</p>
-                        <div class="cardapio-separador"></div>
+                        <span class="cardapio-separador">......................</span>
                         <p class="cardapio-preco">R$52,40</p>
                     </div>
                     <p class="cardapio-descricao">Filé mignon empanado, queijo, regado ao molho de tomate fresco, arroz
@@ -248,7 +240,7 @@
                 <img class="img-cardapio" src="assets/img/banner/img-03.jpg" alt="">
             </div>
         </section>
-        <section class="entradas" id="entradas">
+ <!--        <section class="entradas" id="entradas">
             <div class="title  span-1">
                 <h2>Nossas entradas</h2>
             </div>
@@ -259,7 +251,8 @@
                         <div class="cardapio-separador"></div>
                         <p class="cardapio-preco">R$25,50</p>
                     </div>
-                    <p class="cardapio-descricao">Caponata de beringela, patê, sardela, azeitona, manteiga e seleção de pães
+                    <p class="cardapio-descricao">Caponata de beringela, patê, sardela, azeitona, manteiga e seleção de
+                        pães
                         e torradas</p>
                 </div>
                 <div class="cardapio-item-wrapper">
@@ -268,7 +261,8 @@
                         <div class="cardapio-separador"></div>
                         <p class="cardapio-preco">R$46,80</p>
                     </div>
-                    <p class="cardapio-descricao">Caponata de beringela, patê, sardela, azeitona, manteiga e seleção de pães
+                    <p class="cardapio-descricao">Caponata de beringela, patê, sardela, azeitona, manteiga e seleção de
+                        pães
                         e torradas</p>
                 </div>
                 <div class="cardapio-item-wrapper">
@@ -293,7 +287,8 @@
                         <div class="cardapio-separador"></div>
                         <p class="cardapio-preco">r$49,00</p>
                     </div>
-                    <p class="cardapio-descricao">Carne crua (lagarto) regado ao molho de mostarda com alcaparras e rúcula,
+                    <p class="cardapio-descricao">Carne crua (lagarto) regado ao molho de mostarda com alcaparras e
+                        rúcula,
                         acompanha pão</p>
                 </div>
                 <div class="cardapio-item-wrapper">
@@ -313,7 +308,8 @@
                         <div class="cardapio-separador"></div>
                         <p class="cardapio-preco">r$86,00</p>
                     </div>
-                    <p class="cardapio-descricao">Filé mignon picado ponta de faca temperado na mesa, com cebola, azeitona,
+                    <p class="cardapio-descricao">Filé mignon picado ponta de faca temperado na mesa, com cebola,
+                        azeitona,
                         salsinha, alcaparras e gema de ovos, servido cru</p>
                 </div>
                 <img class="img-cardapio" src="assets/img/banner/img-04.jpg" alt="">
@@ -336,7 +332,7 @@
             </div>
             <img class="img-cardapio" src="assets/img/banner/img-05.jpg" alt="">
             <div class="cardapio-container">
-                
+
             </div>
         </section>
         <section class="saladas" id="saladas">
@@ -1002,7 +998,7 @@
             <img class="img-cardapio" src="assets/img/banner/img-19.jpg" alt="">
 
         </section>
-
+ -->
 
 
         <footer class="footer">
