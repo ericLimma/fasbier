@@ -47,6 +47,9 @@
 .cardapio_texto>.bold {
     margin: 16px 0 4px 0;
 }
+.btn_cardapio{
+    text-decoration: none;
+}
 
 .cardapio_img-1 {
     width: 176px;
