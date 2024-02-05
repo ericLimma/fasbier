@@ -39,7 +39,8 @@
     z-index: 45;
 }
 
-.social-media-container {
+.social-media {
+    z-index: 80;
 
 }
 

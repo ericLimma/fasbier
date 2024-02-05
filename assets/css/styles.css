@@ -36,6 +36,28 @@ h2 {
     z-index: 100;
 }
 
+
+@media screen and (max-width: 390px) {
+    .whatsapp__link-mobile {
+        display: block;
+    }
+
+    .whatsapp__link-desktop {
+        display: none;
+    }
+}
+
+/* Large devices */
+@media screen and (min-width: 980px) {
+    .whatsapp__link-mobile {
+        display: none;
+    }
+
+    .whatsapp__link-desktop {
+        display: block;
+    }
+}
+
 .whatsapp__link img {
     width: 60px;
 }
