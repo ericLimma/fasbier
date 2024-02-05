@@ -13,6 +13,7 @@ class FormSubmit {
   displaySuccess() {
     /* this.form.innerHTML = this.settings.success; */
     this.sucesso.classList.add('sucesso_on');
+    
   }
 
   displayError() {
