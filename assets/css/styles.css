@@ -37,26 +37,6 @@ h2 {
 }
 
 
-@media screen and (max-width: 390px) {
-    .whatsapp__link-mobile {
-        display: block;
-    }
-
-    .whatsapp__link-desktop {
-        display: none;
-    }
-}
-
-/* Large devices */
-@media screen and (min-width: 980px) {
-    .whatsapp__link-mobile {
-        display: none;
-    }
-
-    .whatsapp__link-desktop {
-        display: block;
-    }
-}
 
 .whatsapp__link img {
     width: 60px;
@@ -108,4 +88,25 @@ article {
 
 .font-20 {
     font-size: 20px;
+}
+
+@media screen and (max-width: 390px) {
+    .whatsapp__link-mobile {
+        display: block;
+    }
+
+    .whatsapp__link-desktop {
+        display: none;
+    }
+}
+
+/* Large devices */
+@media screen and (min-width: 980px) {
+    .whatsapp__link-mobile {
+        display: none;
+    }
+
+    .whatsapp__link-desktop {
+        display: block;
+    }
 }
