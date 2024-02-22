@@ -1,11 +1,14 @@
-.executivo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 8px;
-    width: 390px;
-    color: #231E1F;
+
+.executivo .title {
+    height: 60px;
+    grid-row: 1/2;
+    justify-content: space-between;
 }
-.img-cardapio{
-    width: 100%;
-    grid-row: 1 /span 3;
+.height{
+    height: 275px;
+}
+@media screen and (min-width: 768px) {
+    .executivo .title {
+        height: 80px;
+    }
 }

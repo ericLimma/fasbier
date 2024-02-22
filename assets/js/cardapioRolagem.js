@@ -3,7 +3,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         var targetSection = $(this).attr('href');
-        var offset = $(targetSection).offset().top - 90;
+        var offset = $(targetSection).offset().top - 110;
 
         $('html, body').animate({
             scrollTop: offset
