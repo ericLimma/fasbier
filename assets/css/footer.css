@@ -73,3 +73,8 @@
     margin: auto;
 }
 
+.footer__link {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 600;
+}
