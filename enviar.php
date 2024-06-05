@@ -51,8 +51,7 @@ try {
     $mail->Password   = SMTP_PASSWORD;                               //SMTP password
     $mail->Port       = SMTP_PORT;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     $mail->CharSet    =    'utf8';
-    $mail->SMTPSecure    =    'tls';
-
+    $mail->SMTPSecure    =    'ssl';
     //Recipients
     $mail->setFrom('contato@restaurantefassbier.com.br', 'Restaurante Fassbier');
     $mail->addAddress('contato@restaurantefassbier.com.br', 'Restaurante Fassbier');     //Add a recipient
