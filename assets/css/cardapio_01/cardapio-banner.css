@@ -1,0 +1,32 @@
+
+.banner {
+    width: 100vw;
+    max-width: 762px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-content: space-around;
+    margin: auto;
+    margin-top: 16px;
+
+}
+
+.banner_img {
+    max-width: 980px;
+}
+
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.banner_img {
+    width: 100%;
+}
+.cardapio-body {
+    background: url('../../img/banner/cardapio-bg.jpg');
+}

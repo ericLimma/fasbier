@@ -1,0 +1,14 @@
+
+.executivo .title {
+    height: 60px;
+    grid-row: 1/2;
+    justify-content: space-between;
+}
+.height{
+    height: 275px;
+}
+@media screen and (min-width: 768px) {
+    .executivo .title {
+        height: 80px;
+    }
+}

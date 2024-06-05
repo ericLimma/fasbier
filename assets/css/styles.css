@@ -1,0 +1,115 @@
+:root {
+    --amarelo: #FFF200;
+    --preto: #000000;
+    --vermelho: #AF1E22;
+    --branco: #FAFAFA;
+    --vinho: #4A090F;
+    --cinza: #666666;
+    --cinza-escuro: #363636;
+    --navbar-height: 48px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+
+    /* font-family: 'Nanum Brush Script', cursive;  */
+    background: url('../img/bg-particle.png') var(--preto);
+    color: var(--branco);
+    overflow-x: hidden;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--amarelo);
+}
+
+.whatsapp__link {
+    position: fixed;
+    bottom: 40px;
+    right: 16px;
+    z-index: 100;
+}
+
+
+
+.whatsapp__link img {
+    width: 60px;
+}
+
+.btn {
+    border: none;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-size: 18px;
+    width: 160px;
+    height: 44px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.btn img {
+    width: 28px;
+    height: 28px;
+}
+
+.btn_cardapio {
+    font-size: 14px;
+    gap: 0;
+}
+
+.btn_cardapio p {
+    width: 50%;
+}
+
+section,
+article {
+    margin-bottom: 64px;
+}
+
+
+.bold {
+    font-weight: 800;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 390px) {
+    .whatsapp__link-mobile {
+        display: block;
+    }
+
+    .whatsapp__link-desktop {
+        display: none;
+    }
+}
+
+/* Large devices */
+@media screen and (min-width: 980px) {
+    .whatsapp__link-mobile {
+        display: none;
+    }
+
+    .whatsapp__link-desktop {
+        display: block;
+    }
+}

@@ -1,0 +1,205 @@
+:root {
+    --amarelo: #FFF200;
+    --preto: #000000;
+    --vermelho: #AF1E22;
+    --branco: #FAFAFA;
+    --vinho: #4A090F;
+    --cinza: #666666;
+    --laranja: #e89200;
+    --cinza-escuro: #363636;
+    --navbar-height: 48px;
+    --verde-escuro:#083d0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/cardapio-bg.jpg');
+    background-repeat: repeat;
+    background-size: 375px;
+
+}
+
+body section {
+    margin-bottom: 0;
+}
+
+.executivo,
+.entradas,
+.saladas,
+.pratos-tipicos,
+.peixes,
+.carnes,
+.menu-infantil,
+.risotos,
+.porcoes-extras,
+.parmegianas,
+.bebidas,
+.sobremesas {
+    width: 95%;
+    max-width: 780px;
+    margin: 36px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-bottom: 1rem;
+
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 48%;
+    row-gap: 4px;
+}
+
+.item-nome {
+    display: grid;
+    grid-template-columns: 2fr auto 1fr;
+    align-items: baseline;
+    column-gap: 2px;
+
+}
+
+.item {
+    width: 100%;
+
+}
+
+.item-descricao {
+    text-align: justify;
+    font-weight: 600;
+    font-size: 8px;
+    font-family: "Raleway", Arial, sans-serif;
+    font-optical-sizing: auto;
+    color: #231E1F;
+    margin: 0;
+    width: 100%;
+    line-height: 8px;
+
+
+}
+
+.item-cod,
+.item-preco,
+.separador {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #231E1F;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.item-cod {
+    line-height: 12px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.icone-1 {
+    width: 20px;
+    margin-left: -5px;
+    margin-right: 3px;
+    align-self: center;
+}
+
+.icone-2 {
+    width: 20px;
+    margin-right: -10px;
+}
+
+.m-negative {
+    margin-top: -24px;
+}
+
+.img-cardapio {
+    width: 100%;
+    height: 100%;
+    transform: translateY(0px);
+    animation: float 8s ease-in-out infinite;
+}
+
+.cardapio-img {
+    width: 100%;
+
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+
+}
+
+@media screen and (max-width: 400px) {}
+
+
+@media screen and (min-width: 768px) {
+    .item-descricao {
+        font-size: .9rem;
+        line-height: 1rem;
+    }
+
+    .item {
+        margin-bottom: 1rem;
+    }
+
+    .item-cod,
+    .item-preco,
+    .separador {
+        font-size: 1.5rem;
+    }
+
+    .item-cod {
+        line-height: 28px;
+    }
+
+    .icone-1 {
+        width: 40px;
+        margin-left: -5px;
+    }
+
+    .icone-2 {
+        width: 40px;
+        margin-right: -10px;
+    }
+
+    .item-cod small {
+        font-size: 1.2rem;
+    }
+
+}

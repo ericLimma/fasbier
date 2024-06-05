@@ -1,0 +1,164 @@
+.cardapio-body {
+    background-image: url('../../img/banner/cardapio-bg.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+
+.cardapio-body section {
+    margin-bottom: 0;
+}
+
+.executivo,
+.entradas,
+.saladas,
+.pratos-tipicos,
+.peixes,
+.carnes,
+.risotos,
+.bebidas,
+.sobremesas {
+    width: 95%;
+    max-width: 780px;
+    margin-top: 36px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 16px;
+
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 48%;
+    row-gap: 4px;
+}
+
+.item-nome {
+    display: grid;
+    grid-template-columns: 2fr auto 1fr;
+    align-items: baseline;
+    column-gap: 2px;
+
+}
+
+.img-cardapio {
+    width: 100%;
+}
+
+.item {
+    width: 100%;
+}
+
+.item-descricao {
+    text-align: justify;
+    font-weight: 600;
+    font-size: 8px;
+    font-family: "Raleway", Arial, sans-serif;
+    font-optical-sizing: auto;
+    color: #231E1F;
+    margin: 0;
+    width: 100%;
+
+}
+
+.item-cod,
+.item-preco,
+.separador {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #231E1F;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.separador {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.bg-verde {
+    background-color: #6FB000;
+    color: #231E1F;
+
+}
+
+.bg-preto {
+    background-color: #231E1F;
+}
+
+.bg-marrom {
+    background-color: #431E1A;
+}
+
+.bg-vermelho {
+    background-color: #BE1E2D;
+    color: var(--branco);
+}
+
+.bg-amarelo {
+    background-color: var(--amarelo);
+    color: #231E1F;
+}
+
+.bg-laranja {
+    background-color: #e89200;
+}
+
+.bg-amarelo h2 {
+    color: #231E1F;
+}
+
+.bg-cinza {
+    background-color: #4B4444;
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.icone-1 {
+    width: 20px;
+    margin-left: -5px;
+}
+.icone-2 {
+    width: 20px;
+    margin-right: -10px;
+}
+
+.seta-indicativa {
+    position: absolute;
+    left: -18px;
+    width: 54px;
+    top: 17px;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.349));
+}
+
+.m-negative{
+    margin-top: -24px;
+}
+
+@media screen and (max-width: 400px) {}
+
+/* Medium devices */
+@media screen and (min-width: 768px) {}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fassbier</title>
+    <!-- css-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animacoes.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/quemSomos.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/css/cardapio.css">
+    <link rel="stylesheet" href="assets/css/formulario.css">
+    <link rel="stylesheet" href="assets/css/endereco.css">
+    <link rel="stylesheet" href="assets/css/festivais.css">
+    <link rel="stylesheet" href="assets/css/vale-presente.css">
+    <link rel="stylesheet" href="assets/css/scrool-bar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Mulish:wght@300;400;500;600;700&family=Nanum+Brush+Script&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/img/favicon/android-chrome-192x192.png" type="image/x-icon">
+    <!-- javaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script defer src="assets/js/menu.js"></script>
+    <script defer src="assets/js/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/form.js"></script>
+    <script defer src="assets/js/voltarAoTopo.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu__wrapper">
+            <nav class="menu__bar">
+
+                <img class="menu-icon" src="assets/img/icons/burger-menu-yellow.svg" title='Burger Menu'
+                    alt='Burger Menu' onclick="toggleMenu(this)">
+                <ul class="navigation">
+                    <li>
+                        <a href="#inicio" title="Inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#quemSomos" title="Quem Somos">
+                            Quem Somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#endereco" title="Endereço">
+                            Endereço
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cardapio/index.html" target="_blank" title="Cardápio">
+                            Cardápio
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#eventos" title="Eventos">
+                            Eventos
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#valePresente" title="Vale Presente">
+                            Vale Presente
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#contato" title="Contato">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <a target="_blank" href="https://www.instagram.com/restaurantefassbier/" title="social-media" class="social-media">
+        <img src="assets/img/icons/instagram.png" alt="instagram-logo">
+    </a>
+    <main>
+        <div class="whatsapp__link whatsapp__link-desktop"><a target="_blank"
+                href="https://web.whatsapp.com/send?phone=5519997461169"><img class="whatsapp__button"
+                    src="assets/img/whatsapp.png" alt=""></a>
+        </div>
+        <div class="whatsapp__link whatsapp__link-mobile"><a target="_blank" href="https://wa.me/5519997461169"><img
+                    class="whatsapp__button" src="assets/img/whatsapp.png" alt=""></a>
+        </div>
+        <section id="inicio" class="inicio"><!-- inicio -->
+            <div class="sombra sombra_cima"></div>
+
+            <div class="logo__box aparecer">
+                <img class="logo__img " src="assets/img/logo_frase.png" alt="">
+                <p class="logo_frase">sua experiência culinária europeia</p>
+            </div>
+            <div class="pirula-container">
+                <div class="pirula">
+                    <p>Role para baixo</p>
+                </div>
+                <img class="arrow" src="assets/img/icons/arrow.png" alt="">
+            </div>
+        </section>
+        <section id="sobre" class="sobre"><!-- sobre -->
+            <article class="quem_somos">
+                <h2 class="quem_somos-title mobile ">Quem Somos</h2>
+                <img class="quem_somos--img rotate" src="assets/img/prato-1.png" alt="">
+                <div class="quem_somos_texto">
+                    <h2 class="desktop ">Quem Somos</h2>
+                    <p class="desliza-direita">Há mais de duas décadas, o Fassbier conquistou o título de epicentro da
+                        culinária europeia de alta
+                        qualidade, conquistando paladares exigentes e se tornando um ícone gastronômico em nossa região.
+                    </p>
+                    <p class="desliza-direita">Um verdadeiro refúgio para os apreciadores da culinária europeia,
+                        oferecendo
+                        uma experiência única,
+                        onde em cada prato, revelamos não apenas sabores, mas uma narrativa cuidadosamente construída
+                        entre
+                        paladar, cultura, sensações e tradição gastronômica.</p>
+                </div>
+
+            </article>
+            <div id="festivais" class="festivais flip-down">
+                <div class="festivais_titulo">
+                    <p class="festivais_p">Referência em</p>
+                    <h3 class="festivais_h3">#FESTIVAISTEMATICOS</h3>
+                </div>
+            </div>
+            <section class="container desliza-esquerda">
+                <div class="card__container swiper">
+                    <div class="card__content">
+                        <div class="swiper-wrapper">
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/carousel/festival_fondue.jpg" alt="image" class="card__img">
+                                </div>
+
+                                <div class="card__data">
+                                    <p class="bold festival-data">14/06 a 27/07</p>
+                                    <h3 class="card__name">Festival do Fondue</h3>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/carousel/festival_camarao.jpg" alt="image" class="card__img">
+                                </div>
+
+                                <div class="card__data">
+                                    <p class="card__bullet bold"> Em Breve</p>
+                                    <h3 class="card__name">Festival do Camarão</h3>
+                                </div>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/carousel/festival_alcachofra.jpg" alt="image"
+                                        class="card__img">
+                                </div>
+
+                                <div class="card__data">
+                                    <p class="card__bullet bold"> Em Breve</p>
+                                    <h3 class="card__name">Festival da Alcachofra</h3>
+                                </div>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/carousel/festival_bacalhau.jpg" alt="image" class="card__img">
+                                </div>
+
+                                <div class="card__data">
+                                    <p class="card__bullet bold"> Em Breve</p>
+                                    <h3 class="card__name">Festival do Bacalhau</h3>
+                                </div>
+                            </article>
+
+
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/carousel/menu_oktober.jpg" alt="image" class="card__img">
+                                </div>
+
+                                <div class="card__data">
+                                    <p class="card__bullet bold"> Em Breve</p>
+                                    <h3 class="card__name">Menu Oktober</h3>
+                                </div>
+                            </article>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next">
+                        <img class="right-arrow" src="assets/img/icons/next.png" alt="">
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <img class="left-arrow" src="assets/img/icons/previous.png" alt="">
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </section>
+        <section id="cardapio" class="cardapio"><!-- Cardápio -->
+            <div class="cardapio_container">
+                <h2 class="cardapio_titulo">Cardápio Executivo</h2>
+                <img class="cardapio_img cardapio_img-1 desliza-esquerda" src="assets/img/cardapio_img-1.png" alt="">
+                <img class="cardapio_img cardapio_img-2 aparecer" src="assets/img/cardapio_img-2.png" alt="">
+                <div class="cardapio_texto desliza-esquerda">
+                    <p class="bold">209 - EISBEIN</p>
+                    <p>Joelho suíno à pururuca servido com batata e chucrute</p>
+
+                    <p class="bold">140 - BACALHAU GOMES DE SÁ</p>
+                    <p>Lascas de bacalhau salteadas no azeite com batata, azeitonas, cebola e ovos</p>
+
+                    <p class="bold">148 - BIFE ANCHO DO CHEFF</p>
+                    <p>Contra-ﬁlé grelhado regado ao creme de queijo, acompanhado de tomates conﬁt e fritas</p>
+
+                    <p class="bold">144 - TILÁPIA</p>
+                    <p>Filé de tilápia empanada e frita acompanhado de panaché de legumes</p>
+
+                    <p class="bold">155- PICANHA SUÍNA</p>
+                    <p>Picanha suína grelhada regado ao molho de mostarda acompanhada de batata rústica</p>
+
+                    <p class="bold">143 - BOVINO GRELHADO</p>
+                    <p>Filé mignon bovino acompanhado de panaché de legumes</p>
+                </div>
+                <div class="cardapio_texto alinhar_direita desliza-direita">
+                    <p class="bold" class="bold">149 - BIFE ANCHO</p>
+                    <p>Contraﬁlé grelhado acompanhado de batatas rústicas</p>
+
+                    <p class="bold">147- COSTELINHA BARBECUE</p>
+                    <p>Costeletas suínas ao molho barbecue acompanhadas de batatas fritas</p>
+
+                    <p class="bold">102- TILÁPIA AO MOLHO DE CAMARÃO</p>
+                    <p>Filé de tilápia empanada e frita regada ao molho de camarão acompanhada de purê de batata</p>
+
+                    <p class="bold">158- FRANGO CROCANTE</p>
+                    <p>Filete frango empanado e frito acompanhado de purê de batata</p>
+
+                    <p class="bold">195- PARMEGIANA DE FRANGO</p>
+                    <p>Filé de frango empanado, queijo, regado ao m olho de tomate fresco e fritas</p>
+                </div>
+                <a href="cardapio/index.html" target="_blank" class="btn btn_cardapio">
+                    <img src="assets/img/icons/menu.png" alt="icone menu">
+                    <p>Cárdapio completo</p>
+                </a>
+            </div>
+        </section>
+        <section class="endereco"><!-- Endereço -->
+            <h2 class="mobile">Onde Estamos</h2>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.8746913007885!2d-47.59381432469476!3d-22.73289847937776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c62fc69f9c4261%3A0x5138882498c15036!2sR.%20Cap.%20Jos%C3%A9%20Pinto%20Siqueira%2C%201701%20-%20Unileste%2C%20Piracicaba%20-%20SP%2C%2013422-150!5e0!3m2!1spt-BR!2sbr!4v1703349015499!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="endereco-bg"></div>
+            <div class="endereco-texto">
+                <h2 class="desktop">Onde Estamos</h2>
+                <a class="endereco-link" target="_blank" href="https://maps.app.goo.gl/N7EqYZixwXgfoBug9">
+                    <img class="icone end-icone" src="assets/img/icons/local.png" alt="">
+                    <p> R. Cap. José Pinto Siqueira, 1701 Unileste, Piracicaba - SP</p>
+                </a>
+            </div>
+        </section>
+        <!--         <section class="Instagram">
+            <h2>#instagram</h2>
+            <div>
+                gallery
+            </div>
+        </section> -->
+        <section class="vale-presente"><!-- Vale Presente -->
+            <h2>Vale Presente</h2>
+            <p>Uma oportunidade única de explorar sabores europeus, tradição e momentos inesquecíveis. Disponíveis nos
+                valores de R$150, R$200 e R$250, esses vales são a chave para uma experiência gastronômica sofisticada.
+            </p>
+            <p>Ao escolher o Vale Presente Fassbier, você não está apenas dando um presente; está compartilhando a
+                promessa de uma refeição excepcional! </p>
+            <img class="vale-presente__img cresce" src="assets/img/vale-presente.png" alt="vale presente">
+
+        </section>
+        <section class="formulario_section sobe"><!-- Formulário -->
+            <form action="enviar.php" method="post" class="formulario" >
+                <h2>Organize seu Evento Aqui</h2>
+                <fieldset class="fieldset">
+                    <legend>Dados Pessoais</legend>
+    
+                    <label for="nome">Nome: </label>
+                    <input class="form_input" type="text" id="nome" name="nome" placeholder="Digite seu Nome" required />
+    
+                    <label for="email">E-mail: </label>
+                    <input class="form_input" autocomplete="email" type="email" name="email" id="email" placeholder="ex.: meuemail@exemplo.com" required />
+    
+                    <label for="tel">Telefone: </label>
+                    <input class="form_input" autocomplete="tel" type="tel" id="tel" name="tel" placeholder="(00) 0 0000 - 0000 " required />
+                    <div class="radio_container">
+                        <p>Prefiro ser contatado via:</p>
+                        <div>
+                            <div>
+                                <input type="radio" id="whatsapp" name="contato" value="via-whatsapp" checked />
+                                <label for="whatsapp">whatsapp</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="contato-email" name="contato" value="via-email" />
+                                <label for="email">e-mail</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Dados do Evento </legend>
+    
+                    <label for="eventos">Tipo de evento: </label>
+                    <select class="form_input" id="eventos" name="eventos">
+                        <option selected disabled value="selecione" class="transparent_option">Selecione</option>
+                        <option value="casamento">Casamento</option>
+                        <option value="aniversario">Aniversário</option>
+                        <option value="corporativo">Corporativo</option>
+                        <option value="outros">Outros</option>
+                    </select>
+    
+                    <label for="data">Data do Evento:</label>
+                    <input class="form_input" type="datetime-local" id="data" name="data" placeholder="01/01/2024 - 00:00" />
+    
+    
+                    <label for="convidados">Número de Convidados: </label>
+                    <input class="form_input" type="number" name="convidados" id="convidados" placeholder="0">
+    
+                    <label for="mensagem">Sua mensagem: </label>
+                    <textarea class="form_input textarea" name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+                </fieldset>
+                <button type="submit" class="btn" data-button>Enviar</button>
+
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="fasbier__footer">
+
+                <button class="footer__button" id="btnVoltarAoTopo">
+                    <img class="button__icon" src="assets/img/icons/up.png" alt="">
+                    <p>Voltar ao Topo</p>
+                </button>
+                <div class="footer__logo">
+                    <img src="assets/img/logo_preto.png" alt="logo fassbier">
+                </div>
+                <div class="footer__content">
+                    <img class="icone" src="assets/img/icons/relogio.png" alt="">
+                    <p class="bold">Aberto todos os dias (inclusive Feriados)</p>
+                    <p class="semi-bold font-20">Das 11h as 15h</p>
+                </div>
+                <div class="footer__content">
+                    <img class="icone" src="assets/img/icons/balao-de-fala.png" alt="">
+                    <p><a class="footer__link" href="">+55 19 99746-1169</a></p>
+                    <p><a class="footer__link" href="">@restaurantefassbier</a></p>
+                    <p><a class="footer__link"
+                            href="mailto:contato@restaurantefassbier.com.br">contato@restaurantefassbier.com.br</a></p>
+                </div>
+            </div>
+        </footer>
+        <div class="dev__footer">
+            <p>Copyright © 2023 Restaurante Fassbier.
+                Todos os direitos reservados.</p>
+            <p>Desenvolvido por: Erick Lima</p>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-5WSOOIVmAPFbIVvay1c9zJbMhn8azI+IQPRpdynY0D1s88X3KtbEg2U6F0n3zXYj03U+7ww12O7GA1Gu5yYpQ=="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/anima.js"></script>
+    <script defer src="assets/js/main.js"></script>
+
+</body>
+
+</html>

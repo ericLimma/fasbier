@@ -1,0 +1,142 @@
+.title {
+
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.title h2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Suez One", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--branco);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.title h2 span {
+    font-size: 16px;
+    color: var(--amarelo);
+    margin-top: -5px;
+}
+
+.title small {
+    font-family: 'Montserrat';
+    font-size: 8px;
+    text-align: center;
+    color: var(--branco);
+}
+
+.title-pq {
+    height: 36px !important;
+    margin-bottom: 16px;
+}
+
+.title-pq h2 {
+    font-size: 24px !important;
+}
+
+.wrap {
+    white-space: wrap !important;
+}
+
+.separador {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bg-verde {
+    background-color: #6FB000;
+    color: var(--branco);
+
+}
+
+.bg-preto {
+    background-color: #231E1F;
+}
+
+.bg-marrom {
+    background-color: #431E1A;
+}
+
+.bg-vermelho {
+    background-color: #BE1E2D;
+    color: var(--branco);
+}
+
+.bg-amarelo {
+    background-color: var(--amarelo);
+    color: #231E1F;
+}
+
+.bg-laranja {
+    background-color: var(--laranja);
+}
+
+.bg-amarelo h2 {
+    color: #231E1F;
+}
+
+.bg-cinza {
+    background-color: #4B4444;
+}
+
+.cardapio-pilula {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin: 0;
+    font-size: 10px;
+    align-self: self-end;
+}
+
+/* Medium devices */
+@media screen and (min-width: 768px) {
+
+    .title {
+        padding: 1rem;
+        height: 80px;
+    }
+
+    .title h2 {
+        font-size: 2.5rem;
+    }
+
+    .title h2 span {
+        font-size: 2rem;
+        color: var(--amarelo);
+        margin-top: -15px;
+    }
+
+    .title small {
+        font-size: 12px;
+        max-width: 30%;
+    }
+
+    .title-pq {
+        height: 52px !important;
+        margin-bottom: 16px;
+    }
+
+    .title-pq h2 {
+        font-size: 24px !important;
+    }
+
+    .wrap {
+        white-space: wrap !important;
+    }
+
+    .cardapio-pilula {
+        margin-top: 5px;
+        font-size: 1.2rem;
+    }
+
+}
