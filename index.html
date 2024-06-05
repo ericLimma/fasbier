@@ -147,7 +147,6 @@
                                 <div class="card__image">
                                     <img src="assets/img/carousel/festival_fondue.jpg" alt="image" class="card__img">
                                 </div>
-
                                 <div class="card__data">
                                     <p class="bold festival-data">14/06 a 27/07</p>
                                     <h3 class="card__name">Festival do Fondue</h3>
@@ -296,57 +295,55 @@
             <img class="vale-presente__img cresce" src="assets/img/vale-presente.png" alt="vale presente">
 
         </section>
-        <section class="formulario_section sobe"><!-- Formulário -->
-            <form action="enviar.php" method="post" class="formulario" >
+        <section class="formulario_section"><!-- Formulário -->
+            <form action="enviar.php" method="post" class="formulario">
                 <h2>Organize seu Evento Aqui</h2>
-                <fieldset class="fieldset">
-                    <legend>Dados Pessoais</legend>
-    
-                    <label for="nome">Nome: </label>
-                    <input class="form_input" type="text" id="nome" name="nome" placeholder="Digite seu Nome" required />
-    
-                    <label for="email">E-mail: </label>
-                    <input class="form_input" autocomplete="email" type="email" name="email" id="email" placeholder="ex.: meuemail@exemplo.com" required />
-    
-                    <label for="tel">Telefone: </label>
-                    <input class="form_input" autocomplete="tel" type="tel" id="tel" name="tel" placeholder="(00) 0 0000 - 0000 " required />
-                    <div class="radio_container">
-                        <p>Prefiro ser contatado via:</p>
-                        <div>
+                <div class="form-container">
+                    <fieldset class="fieldset">
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome: </label>
+                        <input class="form_input" type="text" id="nome" name="nome" placeholder="Digite seu Nome"
+                            required />
+                        <label for="email">E-mail: </label>
+                        <input class="form_input" autocomplete="email" type="email" name="email" id="email"
+                            placeholder="ex.: meuemail@exemplo.com" required />
+                        <label for="tel">Telefone: </label>
+                        <input class="form_input" autocomplete="tel" type="tel" id="tel" name="tel"
+                            placeholder="(00) 0 0000 - 0000 " required />
+                        <div class="radio_container">
+                            <p>Prefiro ser contatado via:</p>
                             <div>
-                                <input type="radio" id="whatsapp" name="contato" value="via-whatsapp" checked />
-                                <label for="whatsapp">whatsapp</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="contato-email" name="contato" value="via-email" />
-                                <label for="email">e-mail</label>
+                                <div>
+                                    <input type="radio"  class="radio-custom" id="whatsapp" name="contato" value="via-whatsapp" checked />
+                                    <label for="whatsapp">whatsapp</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="contato-email" name="contato" value="via-email" />
+                                    <label for="email">e-mail</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-    
-                </fieldset>
-                <fieldset class="fieldset">
-                    <legend>Dados do Evento </legend>
-    
-                    <label for="eventos">Tipo de evento: </label>
-                    <select class="form_input" id="eventos" name="eventos">
-                        <option selected disabled value="selecione" class="transparent_option">Selecione</option>
-                        <option value="casamento">Casamento</option>
-                        <option value="aniversario">Aniversário</option>
-                        <option value="corporativo">Corporativo</option>
-                        <option value="outros">Outros</option>
-                    </select>
-    
-                    <label for="data">Data do Evento:</label>
-                    <input class="form_input" type="datetime-local" id="data" name="data" placeholder="01/01/2024 - 00:00" />
-    
-    
-                    <label for="convidados">Número de Convidados: </label>
-                    <input class="form_input" type="number" name="convidados" id="convidados" placeholder="0">
-    
-                    <label for="mensagem">Sua mensagem: </label>
-                    <textarea class="form_input textarea" name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
-                </fieldset>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <legend>Dados do Evento </legend>
+                        <label for="eventos">Tipo de evento: </label>
+                        <select class="form_input" id="eventos" name="eventos">
+                            <option selected disabled value="selecione" class="transparent_option">Selecione</option>
+                            <option value="casamento">Casamento</option>
+                            <option value="aniversario">Aniversário</option>
+                            <option value="corporativo">Corporativo</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                        <label for="data">Data do Evento:</label>
+                        <input class="form_input" type="datetime-local" id="data" name="data"
+                            placeholder="01/01/2024 - 00:00" />
+                        <label for="convidados">Número de Convidados: </label>
+                        <input class="form_input" type="number" name="convidados" id="convidados" placeholder="0">
+                        <label for="mensagem">Sua mensagem: </label>
+                        <textarea class="form_input textarea" name="mensagem" id="mensagem" cols="30"
+                            rows="5"></textarea>
+                    </fieldset>
+                </div>
                 <button type="submit" class="btn" data-button>Enviar</button>
 
             </form>
@@ -381,9 +378,6 @@
             <p>Desenvolvido por: Erick Lima</p>
         </div>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-        integrity="sha512-5WSOOIVmAPFbIVvay1c9zJbMhn8azI+IQPRpdynY0D1s88X3KtbEg2U6F0n3zXYj03U+7ww12O7GA1Gu5yYpQ=="
-        crossorigin="anonymous"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/anima.js"></script>
     <script defer src="assets/js/main.js"></script>
