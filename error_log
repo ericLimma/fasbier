@@ -1,3 +1,0 @@
-[04-Jun-2024 23:56:00 America/Fortaleza] PHP Warning:  Undefined array key "eventos" in /home1/fassbi97/html-publica/enviar.php on line 17
-[05-Jun-2024 00:07:01 America/Fortaleza] PHP Warning:  Undefined array key "eventos" in /home1/fassbi97/html-publica/enviar.php on line 17
-[05-Jun-2024 00:07:02 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/fassbi97/html-publica/enviar.php:1) in /home1/fassbi97/html-publica/enviar.php on line 72
