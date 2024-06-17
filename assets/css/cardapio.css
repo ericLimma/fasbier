@@ -13,7 +13,7 @@
 .cardapio_container {
     background: url('../img/cardapio_bg.jpg') no-repeat center;
     background-size: cover;
-    padding: 0 16px 40px 16px;
+    padding: 2rem 1rem 2.5rem;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -47,7 +47,8 @@
 .cardapio_texto>.bold {
     margin: 16px 0 4px 0;
 }
-.btn_cardapio{
+
+.btn_cardapio {
     text-decoration: none;
 }
 
@@ -67,15 +68,13 @@
 
 }
 
-@media screen and (max-width: 320px) {
-   
-}
+@media screen and (max-width: 320px) {}
 
 @media screen and (min-width: 768px) {
     .cardapio_container {
-        width: 875px;
+        width: 820px;
         max-width: none;
-        padding: 0 64px 54px 64px;
+        padding: 3rem 4rem;
     }
 
     .cardapio_titulo {

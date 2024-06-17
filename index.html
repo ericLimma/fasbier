@@ -7,11 +7,10 @@
     <title>Fassbier</title>
     <!-- css-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/animacoes.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/inicio.css">
-    <link rel="stylesheet" href="assets/css/quemSomos.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/about-us.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
     <link rel="stylesheet" href="assets/css/cardapio.css">
     <link rel="stylesheet" href="assets/css/formulario.css">
@@ -30,6 +29,7 @@
 
     <link rel="shortcut icon" href="assets/img/favicon/android-chrome-192x192.png" type="image/x-icon">
     <!-- javaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script defer src="assets/js/menu.js"></script>
     <script defer src="assets/js/swiper-bundle.min.js"></script>
     <script defer src="assets/js/form.js"></script>
@@ -46,12 +46,12 @@
                     alt='Burger Menu' onclick="toggleMenu(this)">
                 <ul class="navigation">
                     <li>
-                        <a href="#inicio" title="Inicio">
+                        <a href="#home" title="Inicio">
                             Inicio
                         </a>
                     </li>
                     <li>
-                        <a href="#quemSomos" title="Quem Somos">
+                        <a href="#about" title="Quem Somos">
                             Quem Somos
                         </a>
                     </li>
@@ -65,19 +65,19 @@
                             Cardápio
                         </a>
                     </li>
-                
+
                     <li>
                         <a href="#eventos" title="Eventos">
                             Eventos
                         </a>
                     </li>
-                  
+
                     <li>
                         <a href="#valePresente" title="Vale Presente">
                             Vale Presente
                         </a>
                     </li>
-                  
+
                     <li>
                         <a href="#contato" title="Contato">
                             Contato
@@ -91,19 +91,24 @@
         <img src="assets/img/icons/instagram.png" alt="instagram-logo">
     </a>
     <main>
-        <div class="whatsapp__link whatsapp__link-desktop"><a target="_blank"
-                href="https://web.whatsapp.com/send?phone=5519997461169"><img class="whatsapp__button"
-                    src="assets/img/whatsapp.png" alt=""></a>
+        <div class="whatsapp-btn mobile">
+            <a class="whatsapp-link" href="https://wa.me/5519997461169" target="_blank">
+                <img class="whatsapp-img" src="assets/img/icons/outlined-whatsapp.png">
+                <p>Como podemos ajudar?</p>
+            </a>
         </div>
-        <div class="whatsapp__link whatsapp__link-mobile"><a target="_blank" href="https://wa.me/5519997461169"><img
-                    class="whatsapp__button" src="assets/img/whatsapp.png" alt=""></a>
+        <div class="whatsapp-btn desktop">
+            <a class="whatsapp-link" target="_blank" href="https://web.whatsapp.com/send?phone=5519997461169">
+                <img class="whatsapp-img" src="assets/img/icons/outlined-whatsapp.png">
+                <p>Como podemos ajudar?</p>
+            </a>
         </div>
-        <section id="inicio" class="inicio"><!-- inicio -->
-            <div class="sombra sombra_cima"></div>
+        <section id="home" class="home"><!-- home -->
+            <div class="shadow shadow-to-up"></div>
 
-            <div class="logo__box aparecer">
-                <img class="logo__img " src="assets/img/logo_frase.png" alt="">
-                <p class="logo_frase">sua experiência culinária europeia</p>
+            <div class="logo-box">
+                <img class="logo-img " data-aos="fade-down" src="assets/img/logo_frase.png" alt="">
+                <p class="logo-frase" data-aos="fade-up">sua experiência culinária europeia</p>
             </div>
             <div class="pirula-container">
                 <div class="pirula">
@@ -111,18 +116,28 @@
                 </div>
                 <img class="arrow" src="assets/img/icons/arrow.png" alt="">
             </div>
+            <div class="shadow shadow-to-down"></div>
         </section>
-        <section id="sobre" class="sobre"><!-- sobre -->
-            <article class="quem_somos">
-                <h2 class="quem_somos-title mobile ">Quem Somos</h2>
-                <img class="quem_somos--img rotate" src="assets/img/prato-1.png" alt="">
-                <div class="quem_somos_texto">
+
+        <div class="voltar-ao-topo-container">
+            <div class="voltar-ao-topo" id="btnVoltarAoTopo">
+                <img src="assets/img/icons/up.png" alt="Voltar ao Topo">
+            </div>
+        </div>
+        <section id="about" class="about"><!-- about -->
+            <article class="about-us">
+                <h2 class="about-us-title mobile ">Quem Somos</h2>
+                <img class="about-us-img" data-aos="fade-right" data-aos-delay="100" src="assets/img/prato-1.png"
+                    alt="">
+                <div class="about-us-text">
                     <h2 class="desktop ">Quem Somos</h2>
-                    <p class="desliza-direita">Há mais de duas décadas, o Fassbier conquistou o título de epicentro da
+                    <p data-aos="fade-left" data-aos-delay="150">Há mais de duas décadas, o Fassbier conquistou o título
+                        de epicentro da
                         culinária europeia de alta
                         qualidade, conquistando paladares exigentes e se tornando um ícone gastronômico em nossa região.
                     </p>
-                    <p class="desliza-direita">Um verdadeiro refúgio para os apreciadores da culinária europeia,
+                    <p data-aos="fade-left" data-aos-delay="200">Um verdadeiro refúgio para os apreciadores da culinária
+                        europeia,
                         oferecendo
                         uma experiência única,
                         onde em cada prato, revelamos não apenas sabores, mas uma narrativa cuidadosamente construída
@@ -131,13 +146,13 @@
                 </div>
 
             </article>
-            <div id="festivais" class="festivais flip-down">
+            <div id="festivais" class="festivais" data-aos="fade-up" data-aos-delay="200">
                 <div class="festivais_titulo">
                     <p class="festivais_p">Referência em</p>
                     <h3 class="festivais_h3">#FESTIVAISTEMATICOS</h3>
                 </div>
             </div>
-            <section class="container desliza-esquerda">
+            <section class="container" data-aos="fade-up" data-aos-delay="200">
                 <div class="card__container swiper">
                     <div class="card__content">
                         <div class="swiper-wrapper">
@@ -215,11 +230,11 @@
             </section>
         </section>
         <section id="cardapio" class="cardapio"><!-- Cardápio -->
-            <div class="cardapio_container">
+            <div class="cardapio_container " data-aos="fade-up" data-aos-delay="100">
                 <h2 class="cardapio_titulo">Cardápio Executivo</h2>
-                <img class="cardapio_img cardapio_img-1 desliza-esquerda" src="assets/img/cardapio_img-1.png" alt="">
-                <img class="cardapio_img cardapio_img-2 aparecer" src="assets/img/cardapio_img-2.png" alt="">
-                <div class="cardapio_texto desliza-esquerda">
+                <img class="cardapio_img cardapio_img-1" data-aos="fade-right" data-aos-delay="200" src="assets/img/cardapio_img-1.png" alt="">
+                <img class="cardapio_img cardapio_img-2" data-aos="fade-left" data-aos-delay="200" src="assets/img/cardapio_img-2.png" alt="">
+                <div class="cardapio_texto">
                     <p class="bold">209 - EISBEIN</p>
                     <p>Joelho suíno à pururuca servido com batata e chucrute</p>
 
@@ -312,7 +327,8 @@
                             <p>Prefiro ser contatado via:</p>
                             <div>
                                 <div>
-                                    <input type="radio"  class="radio-custom" id="whatsapp" name="contato" value="via-whatsapp" checked />
+                                    <input type="radio" class="radio-custom" id="whatsapp" name="contato"
+                                        value="via-whatsapp" checked />
                                     <label for="whatsapp">whatsapp</label>
                                 </div>
                                 <div>
@@ -348,11 +364,6 @@
         </section>
         <footer class="footer">
             <div class="fasbier__footer">
-
-                <button class="footer__button" id="btnVoltarAoTopo">
-                    <img class="button__icon" src="assets/img/icons/up.png" alt="">
-                    <p>Voltar ao Topo</p>
-                </button>
                 <div class="footer__logo">
                     <img src="assets/img/logo_preto.png" alt="logo fassbier">
                 </div>
@@ -370,13 +381,18 @@
                 </div>
             </div>
         </footer>
-        <div class="dev__footer">
-            <p>Copyright © 2023 Restaurante Fassbier.
-                Todos os direitos reservados.</p>
-            <p>Desenvolvido por: Erick Lima</p>
+        <div class="dev-contact">
+            <p>Desenvolvido por: <a href="#">Erick Lima</a></p>
+            <div class="dev-medias">
+                <img src="assets/img/icons/instagram_dev.png" alt="" srcset="">
+                <img src="assets/img/icons/linkedin.png" alt="" srcset="">
+                <img src="assets/img/icons/git.png" alt="" srcset="">
+                <img src="assets/img/icons/whatsapp.png" alt="" srcset="">
+            </div>
         </div>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/aos_init.js"></script>
     <script src="assets/js/anima.js"></script>
     <script defer src="assets/js/main.js"></script>
 

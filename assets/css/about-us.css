@@ -1,24 +1,31 @@
-.sobre {
+.about {
     padding: 16px;
     text-align: justify;
     margin: auto;
+    scrollbar-width: none;
+    /* Para Firefox */
+    -ms-overflow-style: none;
+    /* Para IE e Edge */
+    overflow: -moz-scrollbars-none;
+    /* Para Firefox */
+    overflow: hidden;
 }
 
-.quem_somos {
+.about-us {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-.quem_somos--img {
+.about-us-img {
     width: 254px;
     height: 240px;
     margin-top: 16px;
 
 }
 
-.quem_somos p {
+.about-us p {
     margin-bottom: 8px;
     padding: 8px;
     text-align: justify;
@@ -35,32 +42,32 @@
 
 
 @media screen and (max-width: 390px) {
-    .sobre {
-        overflow-x: hidden;
+    .about {
         width: 370px;
     }
-    
-  }
 
-    
+}
+
+
 /* Medium devices */
 @media screen and (min-width: 768px) {
-    .sobre {
+    .about {
         max-width: 1020px;
-        overflow-x: hidden;
         padding: 32px;
     }
 
-    .quem_somos {
+    .about-us {
         align-items: center;
         flex-direction: row;
         justify-content: space-around;
         overflow-x: visible;
     }
-    .quem_somos_texto{
+
+    .about-us_text {
         width: 600px;
     }
-    .quem_somos-title{
+
+    .about-us-title {
         text-align: left;
     }
 
@@ -75,7 +82,7 @@
 
 /* Large devices */
 @media screen and (min-width: 1120px) {
-    .sobre {
+    .about {
         width: 1120px;
         padding: 32px;
     }

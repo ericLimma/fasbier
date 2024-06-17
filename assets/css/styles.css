@@ -14,16 +14,17 @@
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 body {
     font-family: 'Mulish', sans-serif;
 
     /* font-family: 'Nanum Brush Script', cursive;  */
     background: url('../img/bg-particle.png') var(--preto);
     color: var(--branco);
-    overflow-x: hidden;
 }
 
 h1,
@@ -40,10 +41,72 @@ h2 {
 }
 
 
+.voltar-ao-topo-container {
+    position: relative;
+}
+
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+}
+
+.voltar-ao-topo::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--branco, white);
+    z-index: -1;
+}
+
+.voltar-ao-topo img {
+    filter: drop-shadow(1px 1px 1px #00000062);
+}
 
 .whatsapp__link img {
-    width: 60px;
+    width: 50px;
 }
+
+.whatsapp-img {
+    width: 15px;
+}
+
+.whatsapp-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.whatsapp-link p {
+    margin: 0;
+    color: var(--branco);
+}
+
+.whatsapp-btn {
+    position: fixed;
+    background-color: #42B759;
+    width: 155px;
+    height: 30px;
+    bottom: 40px;
+    right: 16px;
+    z-index: 100;
+    padding: 6px;
+    font-size: 0.6rem;
+    border-radius: 15px;
+    border: 2px solid var(--branco);
+    opacity: 0.95;
+}
+
 
 .btn {
     border: none;
@@ -94,22 +157,22 @@ article {
 }
 
 @media screen and (max-width: 390px) {
-    .whatsapp__link-mobile {
+    .whatsapp-btn.mobile {
         display: block;
     }
 
-    .whatsapp__link-desktop {
+    .whatsapp-btn .desktop {
         display: none;
     }
 }
 
 /* Large devices */
 @media screen and (min-width: 980px) {
-    .whatsapp__link-mobile {
+    .whatsapp-btn.mobile {
         display: none;
     }
 
-    .whatsapp__link-desktop {
+    .whatsapp-btn .desktop {
         display: block;
     }
 }
