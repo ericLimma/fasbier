@@ -8,6 +8,7 @@
     <!-- css-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/particles.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/about-us.css">
@@ -38,6 +39,7 @@
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <header class="header">
         <div class="menu__wrapper">
             <nav class="menu__bar">
@@ -232,8 +234,10 @@
         <section id="cardapio" class="cardapio"><!-- Cardápio -->
             <div class="cardapio_container " data-aos="fade-up" data-aos-delay="100">
                 <h2 class="cardapio_titulo">Cardápio Executivo</h2>
-                <img class="cardapio_img cardapio_img-1" data-aos="fade-right" data-aos-delay="200" src="assets/img/cardapio_img-1.png" alt="">
-                <img class="cardapio_img cardapio_img-2" data-aos="fade-left" data-aos-delay="200" src="assets/img/cardapio_img-2.png" alt="">
+                <img class="cardapio_img cardapio_img-1" data-aos="fade-right" data-aos-delay="200"
+                    src="assets/img/cardapio_img-1.png" alt="">
+                <img class="cardapio_img cardapio_img-2" data-aos="fade-left" data-aos-delay="200"
+                    src="assets/img/cardapio_img-2.png" alt="">
                 <div class="cardapio_texto">
                     <p class="bold">209 - EISBEIN</p>
                     <p>Joelho suíno à pururuca servido com batata e chucrute</p>
@@ -359,7 +363,7 @@
                     </fieldset>
                 </div>
                 <button type="submit" class="btn" data-button>
-                    Enviar 
+                    Enviar
                     <img class="btn-icon" src="assets/img/icons/send.png" alt="">
                 </button>
 
@@ -394,9 +398,13 @@
             </div>
         </div>
     </main>
+    <!--particles js-->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/particle-app.js"></script>
+    <script src="assets/js/lib/stats.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos_init.js"></script>
-    <script src="assets/js/anima.js"></script>
     <script defer src="assets/js/main.js"></script>
 
 </body>

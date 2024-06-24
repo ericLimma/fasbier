@@ -1,6 +1,6 @@
 :root {
     --amarelo: #FFF200;
-    --preto: #000000;
+    --preto: #0c0c0d;
     --vermelho: #AF1E22;
     --branco: #FAFAFA;
     --vinho: #4A090F;
@@ -25,11 +25,11 @@
     max-width: 1080px;
     margin: auto;
     margin-bottom: 62px;
-    
+
 }
 
 .formulario {
-    
+
     padding: 16px 16px 40px 16px;
     box-sizing: border-box;
     margin: auto;

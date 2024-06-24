@@ -1,6 +1,6 @@
 :root {
     --amarelo: #FFF200;
-    --preto: #000000;
+    --preto: #000;
     --vermelho: #AF1E22;
     --branco: #FAFAFA;
     --vinho: #4A090F;
@@ -23,7 +23,7 @@ body {
     font-family: 'Mulish', sans-serif;
 
     /* font-family: 'Nanum Brush Script', cursive;  */
-    background: url('../img/bg-particle.png') var(--preto);
+    background-color: var(--preto);
     color: var(--branco);
 }
 
