@@ -17,12 +17,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url('../img/cardapio-bg.jpg');
-    background-repeat: repeat;
-    background-size: 375px;
 
-}
 
 body section {
     margin-bottom: 0;
