@@ -9,7 +9,8 @@
 
 /* Fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background: rgba(245, 245, 245, 0.5);
+    opacity: 0;
+    background: transparent;
     /* Fundo com 50% de transparência */
     border-radius: 10px;
     /* Cantos arredondados */
@@ -17,7 +18,7 @@
 
 /* Pega da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(18, 18, 18, 0.5);
+    background-color: #af1e2381;
     /* Pega com 50% de transparência */
     border-radius: 10px;
     /* Cantos arredondados */
@@ -25,12 +26,10 @@
 
 /* Pega da barra de rolagem ao passar o mouse */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(43, 43, 43, 0.5);
+    background-color: #AF1E22;
     /* Pega ao passar o mouse com 50% de transparência */
 }
 
-/* Barra de rolagem horizontal (opcional) */
-::-webkit-scrollbar-horizontal {
-    height: 8px;
-    /* Altura da barra de rolagem horizontal */
+::-webkit-scrollbar:horizontal {
+    display: none;
 }

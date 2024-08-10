@@ -25,12 +25,10 @@
 
 /* Pega da barra de rolagem ao passar o mouse */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(43, 43, 43, 0.5);
+    background-color: rgba(202, 4, 4, 0.5);
     /* Pega ao passar o mouse com 50% de transparência */
 }
 
-/* Barra de rolagem horizontal (opcional) */
-::-webkit-scrollbar-horizontal {
-    height: 8px;
-    /* Altura da barra de rolagem horizontal */
+::-webkit-scrollbar:horizontal {
+    display: none;
 }
