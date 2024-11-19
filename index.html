@@ -5,37 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="l_T2crTwU4Uzr-CUYak0kKG3G0iZHgmeiZCTKj0MxYM" />
+    <meta name="description"
+        content="O Fassbier oferece uma autêntica experiência culinária europeia. Conheça nossos festivais temáticos, cardápio exclusivo, e um ambiente acolhedor que celebra a gastronomia com tradição e sabor. Venha descobrir a verdadeira essência da culinária europeia no Fassbier!">
+    <link rel="shortcut icon" href="assets/img/favicon/android-chrome-192x192.png" type="image/x-icon">
+
     <title>Fassbier</title>
     <!-- css-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/particles.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/about-us.css">
-    <link rel="stylesheet" href="assets/css/carousel.css">
-    <link rel="stylesheet" href="assets/css/cardapio.css">
-    <link rel="stylesheet" href="assets/css/formulario.css">
-    <link rel="stylesheet" href="assets/css/endereco.css">
-    <link rel="stylesheet" href="assets/css/festivais.css">
-    <link rel="stylesheet" href="assets/css/vale-presente.css">
-    <link rel="stylesheet" href="assets/css/scrool-bar.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Mulish:wght@300;400;500;600;700&family=Nanum+Brush+Script&family=Poppins:wght@400;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="shortcut icon" href="assets/img/favicon/android-chrome-192x192.png" type="image/x-icon">
     <!-- javaScript -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script defer src="assets/js/menu.js"></script>
-    <script defer src="assets/js/swiper-bundle.min.js"></script>
-    <script defer src="assets/js/form.js"></script>
-    <script defer src="assets/js/voltarAoTopo.js"></script>
+
 
 </head>
 
@@ -45,8 +26,9 @@
         <div class="menu__wrapper">
             <nav class="menu__bar">
 
-                <img class="menu-icon" src="assets/img/icons/burger-menu-yellow.svg" title='Burger Menu'
-                    alt='Burger Menu' onclick="toggleMenu(this)">
+                <img class="menu-icon" src="assets/img/icons/burger-menu-yellow.svg" title="Burger Menu"
+                    alt="Burger Menu" onclick="toggleMenu(this)" aria-label="Abrir menu">
+
                 <ul class="navigation">
                     <li>
                         <a href="#home" title="Inicio">
@@ -90,18 +72,20 @@
             </nav>
         </div>
     </header>
-    <a target="_blank" href="https://www.instagram.com/restaurantefassbier/" title="social-media" class="social-media">
+    <a target="_blank" href="https://www.instagram.com/restaurantefassbier/" title="social-media" class="social-media"
+        rel="noopener noreferrer">
         <img src="assets/img/icons/instagram.png" alt="instagram-logo">
     </a>
     <main>
         <div class="whatsapp-btn mobile">
-            <a class="whatsapp-link" href="https://wa.me/5519997461169" target="_blank">
+            <a class="whatsapp-link" href="https://wa.me/5519997461169" target="_blank" rel="noopener noreferrer">
                 <img class="whatsapp-img" src="assets/img/icons/outlined-whatsapp.png">
                 <p>Como podemos ajudar?</p>
             </a>
         </div>
         <div class="whatsapp-btn desktop">
-            <a class="whatsapp-link" target="_blank" href="https://web.whatsapp.com/send?phone=5519997461169">
+            <a class="whatsapp-link" target="_blank" href="https://web.whatsapp.com/send?phone=5519997461169"
+                rel="noopener noreferrer">
                 <img class="whatsapp-img" src="assets/img/icons/outlined-whatsapp.png">
                 <p>Como podemos ajudar?</p>
             </a>
@@ -277,18 +261,20 @@
                 </a>
             </div>
         </section>
-        <section class="endereco"><!-- Endereço -->
+        <section class="endereco" id="endereco"><!-- Endereço -->
             <h2 class="mobile">Onde Estamos</h2>
-            <div class="map">
+            <div class="map" id="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.8746913007885!2d-47.59381432469476!3d-22.73289847937776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c62fc69f9c4261%3A0x5138882498c15036!2sR.%20Cap.%20Jos%C3%A9%20Pinto%20Siqueira%2C%201701%20-%20Unileste%2C%20Piracicaba%20-%20SP%2C%2013422-150!5e0!3m2!1spt-BR!2sbr!4v1703349015499!5m2!1spt-BR!2sbr"
-                    style="border:0;" allowfullscreen="" loading="lazy"
+                    style="border:0;" allowfullscreen loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            </script>
             <div class="endereco-bg"></div>
             <div class="endereco-texto">
                 <h2 class="desktop">Onde Estamos</h2>
-                <a class="endereco-link" target="_blank" href="https://maps.app.goo.gl/N7EqYZixwXgfoBug9">
+                <a class="endereco-link" target="_blank" href="https://maps.app.goo.gl/N7EqYZixwXgfoBug9"
+                    rel="noopener noreferrer">
                     <img class="icone end-icone" src="assets/img/icons/local.png" alt="">
                     <p> R. Cap. José Pinto Siqueira, 1701 Unileste, Piracicaba - SP</p>
                 </a>
@@ -378,18 +364,20 @@
                     <p class="semi-bold font-20">Das 11h as 15h</p>
                 </div>
                 <div class="footer__content">
-                    <img class="icone" src="assets/img/icons/balao-de-fala.png" alt="">
-                    <p><a class="footer__link" href="">+55 19 99746-1169</a></p>
-                    <p><a class="footer__link" href="">@restaurantefassbier</a></p>
+                    <img class="icone" src="assets/img/icons/balao-de-fala.png" alt="" rel="noopener noreferrer">
+                    <p><a class="footer__link" href="">+55 19 99746-1169 rel="noopener noreferrer"</a></p>
+                    <p><a class="footer__link" href="" rel="noopener noreferrer">@restaurantefassbier</a></p>
                     <p><a class="footer__link"
-                            href="mailto:contato@restaurantefassbier.com.br">contato@restaurantefassbier.com.br</a></p>
+                            href="mailto:contato@restaurantefassbier.com.br">contato@restaurantefassbier.com.br
+                            rel="noopener noreferrer"</a></p>
                 </div>
             </div>
         </footer>
         <div class="dev-contact">
             <p>Copyright © 2024 Espaço Haras. Todos os direitos reservados.</p>
             <div class="dev-info">
-                <p>Desenvolvido por: <a href="#">Erick Lima</a></p>
+                <p>Desenvolvido por: <a href="https://www.instagram.com/ericlimma.dev/" rel="noopener noreferrer">Erick
+                        Lima</a></p>
                 <div class="dev-medias">
                     <img src="assets/img/icons/instagram_dev.png" alt="" srcset="">
                     <img src="assets/img/icons/linkedin.png" alt="" srcset="">
@@ -399,14 +387,22 @@
             </div>
         </div>
     </main>
+
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/voltarAoTopo.js"></script>
+    <script defer src="assets/js/map.js"></script>
+
     <!--particles js-->
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/particle-app.js"></script>
-    <script src="assets/js/lib/stats.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/aos_init.js"></script>
-    <script defer src="assets/js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="assets/js/aos_init.js"></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
