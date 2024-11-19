@@ -58,8 +58,8 @@ h2 {
 }
 
 .voltar-ao-topo::before {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     content: "";
     display: block;
     position: absolute;
@@ -68,10 +68,12 @@ h2 {
     transform: translate(-50%, -50%);
     background-color: var(--branco, white);
     z-index: -1;
+    border-radius: 100%;
 }
 
 .voltar-ao-topo img {
     filter: drop-shadow(1px 1px 1px #00000062);
+    width: 48px;
 }
 
 .whatsapp__link img {
