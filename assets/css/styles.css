@@ -18,6 +18,10 @@
     padding: 0;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -73,7 +77,7 @@ h2 {
 
 .voltar-ao-topo img {
     filter: drop-shadow(1px 1px 1px #00000062);
-    width: 48px;
+    width: 42px;
 }
 
 .whatsapp__link img {
@@ -281,7 +285,6 @@ article {
     display: inline-block;
     padding: 3px 0;
     position: relative;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.2s ease-in-out;
 }
@@ -403,7 +406,6 @@ article {
 }
 
 .logo-img {
-    width: 283px;
     margin-left: -10px;
     filter: drop-shadow(3px 3px 5px #000);
 
@@ -438,7 +440,7 @@ article {
 .pirula {
     background-color: var(--amarelo);
     color: var(--preto);
-    border-radius: 16px;
+    border-radius: 8px;
     width: 110px;
     height: 30px;
     margin-bottom: 16px;
@@ -491,7 +493,7 @@ article {
 .about-us-img {
     width: 254px;
     height: 240px;
-    margin-top: 16px;
+    margin-top: 8px;
 
 }
 
@@ -567,8 +569,8 @@ article {
 }
 
 .card__content,
-.card__article {
-    border-radius: 1.25rem;
+.card__container {
+    border-radius: 8px;
     overflow: hidden;
     position: relative;
 }
@@ -597,7 +599,7 @@ article {
 
 .card__data {
     padding: 1.5rem 2rem;
-    border-radius: 1rem;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -612,16 +614,16 @@ article {
 .card__img {
     width: 80%;
     margin: auto;
-    border-radius: 16px;
+    border-radius: 8px;
     position: relative;
 }
 
 .card__bullet {
     color: var(--preto);
     background-color: var(--amarelo);
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 14px;
-    width: 80px;
+    width: 100px;
     margin-bottom: 8px;
 }
 
@@ -630,7 +632,7 @@ article {
     color: var(--second-color);
     width: 110px;
     margin-top: 0;
-    text-shadow: 2px 3px 4px var(--preto);
+    text-shadow: 3px 3px 3px var(--preto);
 }
 
 .carousel_container {
@@ -729,14 +731,14 @@ article {
 }
 
 .cardapio_container {
-    background: url('../img/cardapio_bg.jpg') no-repeat center;
-    background-size: cover;
+    background: url('../img/cardapio_bg.jpg') repeat center;
     padding: 2rem 1rem 2.5rem;
     display: flex;
     position: relative;
     flex-direction: column;
     max-width: 600px;
     min-width: 370px;
+    border-radius: 8px;
 
 }
 
@@ -819,17 +821,22 @@ article {
 /* formulario */
 .formulario_section {
     padding: 12px;
-    max-width: 1080px;
+    max-width: 950px;
     margin: auto;
     margin-bottom: 62px;
 }
 
+.form-container {
+    display: block;
+    width: 100%;
+}
+
 .formulario {
     background-color: var(--vinho);
-    padding: 16px 16px 40px 16px;
+    padding: 40px 16px;
     box-sizing: border-box;
     margin: auto;
-    border-radius: 16px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
 }
@@ -855,15 +862,14 @@ article {
 }
 
 .form_input {
-    height: 48px;
     width: 100%;
     margin: 8px auto 16px auto;
-    border-radius: 16px;
+    border-radius: 8px;
     background-color: #683136;
     border: none;
     outline: none;
     color: var(--branco);
-    padding: 0 13px;
+    padding: 8px 12px;
     box-sizing: border-box;
 
 }
@@ -958,9 +964,27 @@ select:-webkit-autofill {
     /* Cor do texto para legibilidade */
 }
 
+@media screen and (min-width: 768px) {
+    .formulario {
+        padding: 3rem 1.5rem;
+    }
+
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .form_input {
+        min-width: 400px;
+    }
+}
+
 /*endereço */
 .map iframe {
-    border-radius: 16px;
+    border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.54);
 }
 
@@ -1005,7 +1029,7 @@ select:-webkit-autofill {
     width: calc(100vw - 32px);
     height: 100%;
     z-index: -45;
-    border-radius: 16px;
+    border-radius: 8px;
     background-color: var(--vermelho);
 }
 
@@ -1041,7 +1065,7 @@ select:-webkit-autofill {
         background-color: var(--vermelho);
         max-width: 875px;
         width: calc(100vh -64px);
-        border-radius: 16px;
+        border-radius: 8px;
         margin: auto;
         margin-bottom: 32px;
         padding: 32px;
@@ -1083,7 +1107,7 @@ select:-webkit-autofill {
     color: var(--preto);
     background-color: var(--amarelo);
     padding: .2rem 1rem;
-    border-radius: 1rem;
+    border-radius: 8pc;
 }
 
 /* vale-presente */
@@ -1127,13 +1151,13 @@ select:-webkit-autofill {
 
 ::-webkit-scrollbar-track {
     background: rgba(245, 245, 245, 0.5);
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 /* Pega da barra de rolagem */
 ::-webkit-scrollbar-thumb {
     background-color: rgba(18, 18, 18, 0.5);
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1154,8 +1178,8 @@ select:-webkit-autofill {
     padding: 2rem;
     position: relative;
     text-align: center;
-    background-color: var(--amarelo);
 
+    background-color: var(--amarelo);
 
 }
 
@@ -1166,10 +1190,11 @@ select:-webkit-autofill {
     align-items: center;
     justify-content: center;
     color: var(--preto);
+    gap: 2rem;
 }
 
 .icone {
-    height: 41px;
+    object-fit: cover;
     margin-bottom: 8px;
 }
 
@@ -1189,6 +1214,18 @@ select:-webkit-autofill {
     margin: 16px;
 }
 
+@media screen and (min-width: 768px) {
+    .fasbier__footer {
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: var(--preto);
+    }
+
+}
+
 .dev-contact {
     background-color: var(--preto-azulado);
     width: 100%;
@@ -1201,7 +1238,7 @@ select:-webkit-autofill {
     color: var(--branco);
     font-weight: 300;
     font-size: clamp(.8rem, 2.5vw, .8rem);
-    padding: 2rem;
+    padding: .8rem;
     margin-top: -1px;
 }
 
