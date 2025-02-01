@@ -47,7 +47,6 @@ h2 {
     z-index: 100;
 }
 
-
 .voltar-ao-topo-container {
     position: relative;
 }
@@ -59,26 +58,14 @@ h2 {
     padding: 10px;
     text-align: center;
     z-index: 100;
-}
-
-.voltar-ao-topo::before {
-    width: 25px;
-    height: 25px;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--branco, white);
-    z-index: -1;
-    border-radius: 100%;
+    width: 60px;
 }
 
 .voltar-ao-topo img {
-    filter: drop-shadow(1px 1px 1px #00000062);
-    width: 42px;
+    filter: drop-shadow(2px 2px 1px #0000008c);
+    width: 100%;
 }
+
 
 .whatsapp__link img {
     width: 50px;
@@ -1140,27 +1127,29 @@ select:-webkit-autofill {
 }
 
 
-
-/* Estilo da barra de rolagem */
+/* scrool bar */
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
-    background-color: rgba(18, 18, 18, 0.226);
+    background-color: var(--cinza-claro);
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(245, 245, 245, 0.5);
-    border-radius: 8px;
+    background: var(--preto-azulado);
+    border-radius: 10px;
 }
 
-/* Pega da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(18, 18, 18, 0.5);
-    border-radius: 8px;
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(202, 4, 4, 0.5);
+    background-color: var(--cinza-claro);
+}
+
+::-webkit-scrollbar-horizontal {
+    height: 8px;
 }
 
 ::-webkit-scrollbar:horizontal {

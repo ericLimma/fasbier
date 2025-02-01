@@ -156,25 +156,42 @@ body section {
     padding: 10px;
     text-align: center;
     z-index: 100;
-}
-
-.voltar-ao-topo::before {
-    width: 20px;
-    height: 20px;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--branco, white);
-    z-index: -1;
+    width: 60px;
 }
 
 .voltar-ao-topo img {
-    filter: drop-shadow(1px 1px 1px #00000062);
+    filter: drop-shadow(2px 2px 1px #0000008c);
+    width: 100%;
 }
 
+/* scrool bar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: var(--cinza-claro);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--preto-azulado);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cinza-claro);
+}
+
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+}
+
+::-webkit-scrollbar:horizontal {
+    display: none;
+}
 
 @keyframes float {
     0% {
