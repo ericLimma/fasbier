@@ -140,7 +140,6 @@ article {
     margin-bottom: 64px;
 }
 
-
 .bold {
     font-weight: 800;
 }
@@ -151,27 +150,6 @@ article {
 
 .font-20 {
     font-size: 20px;
-}
-
-@media screen and (max-width: 390px) {
-    .whatsapp-btn.mobile {
-        display: block;
-    }
-
-    .whatsapp-btn .desktop {
-        display: none;
-    }
-}
-
-/* Large devices */
-@media screen and (min-width: 980px) {
-    .whatsapp-btn.mobile {
-        display: none;
-    }
-
-    .whatsapp-btn .desktop {
-        display: block;
-    }
 }
 
 #particles-js {
@@ -258,21 +236,14 @@ article {
 }
 
 .navigation>li>a {
-    color: white;
+    color: #f5f5f5;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
     text-decoration: none;
     font-weight: 500;
-    background-image: linear-gradient(to right,
-            var(--amarelo),
-            var(--amarelo) 50%,
-            white 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
     display: inline-block;
     padding: 3px 0;
     position: relative;
-    -webkit-text-fill-color: transparent;
     transition: all 0.2s ease-in-out;
 }
 
@@ -290,6 +261,7 @@ article {
 
 .navigation>li>a:hover {
     background-position: 0;
+    color: var(--amarelo);
 }
 
 .navigation>li>a:hover::before {
@@ -1252,4 +1224,25 @@ select:-webkit-autofill {
     text-decoration: none;
     color: var(--preto);
     font-weight: 600;
+}
+
+@media screen and (max-width: 390px) {
+    .whatsapp-btn.mobile {
+        display: block;
+    }
+
+    .whatsapp-btn .desktop {
+        display: none;
+    }
+}
+
+/* Large devices */
+@media screen and (min-width: 980px) {
+    .whatsapp-btn.mobile {
+        display: none;
+    }
+
+    .whatsapp-btn .desktop {
+        display: block;
+    }
 }
