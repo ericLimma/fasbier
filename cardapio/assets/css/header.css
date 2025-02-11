@@ -135,7 +135,7 @@
 }
 
 .cardapio-links {
-    background-color: #A6A6A6;
+    background-color: #272727;
     width: 100vw;
     z-index: 32;
     margin-top: -16px;
@@ -156,7 +156,7 @@
 }
 
 .cardapio-links ul li {
-    background-color: #D9D9D9;
+    background-color: #797777;
     color: black;
     border-radius: 8px;
     font-family: "Suez One", serif;
@@ -205,10 +205,6 @@
         width: 0;
         height: 0;
     }
-}
-
-@media screen and (max-width: 400px) {
-
 }
 
 /* Medium devices */

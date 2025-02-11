@@ -5,14 +5,14 @@
 
 .parmegianas-h2 {
     color: var(--laranja);
-    font-size: 1.2rem;
+    font-size: clamp(.9rem, 5vw, 2rem);
     text-align: center;
     margin-top: -10px;
     letter-spacing: 0px;
 }
 
 .parmegianas-h3 {
-    font-size: 1rem;
+    font-size: clamp(.9rem, 5vw, 1.7rem);
 }
 
 
@@ -31,7 +31,7 @@
 .parmegianas-pilula {
     font-family: "Raleway", Arial, sans-serif;
     text-transform: initial;
-    font-size: .6rem;
+    font-size: clamp(.6rem, 2vw, 1.7rem);
     padding: 1px 2px;
     text-align: center;
     border-radius: 15px;
@@ -43,13 +43,13 @@
 .parmegianas-tabela-linha td,
 .parmegiana-passos-2 {
     padding-top: 5px;
-    font-size: .8rem;
+    font-size: clamp(.6rem, 2vw, 1.7rem);
     font-weight: 600;
 }
 
 .parmegianas-tabela-linha td small {
     padding-top: 5px;
-    font-size: .6rem;
+    font-size: clamp(.6rem, 2vw, 1.7rem);
     margin-right: 2px;
     font-weight: 400;
 }
@@ -81,7 +81,20 @@
     margin-top: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+.valor-adcional {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 5px;
+    font-size: clamp(.9rem, 2vw, 1.7rem);
+    margin-left: auto;
+    margin-top: -15px;
+    width: 40%;
+    max-width: 110px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+/* @media screen and (min-width: 768px) {
 
     .parmegianas-h2 {
         font-size: 2rem;
@@ -91,7 +104,9 @@
     .parmegianas-h3 {
         font-size: 2rem;
     }
-    .parmegianas-h4, .parmegianas-tabela-thead th {
+
+    .parmegianas-h4,
+    .parmegianas-tabela-thead th {
         font-size: 1.5rem;
     }
 
@@ -117,9 +132,9 @@
 
     .parmegiana-passos-2 {
         border: 3px dotted var(--verde-escuro);
-        margin:  1rem 0 ;
+        margin: 1rem 0;
         padding: 1rem;
-        border-radius:1rem;
+        border-radius: 1rem;
     }
-    
-}
+
+} */

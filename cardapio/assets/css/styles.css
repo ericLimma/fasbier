@@ -35,12 +35,13 @@ body section {
 .parmegianas,
 .bebidas,
 .sobremesas {
-    width: 95%;
+    width: 100%;
     max-width: 780px;
     margin: 36px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 1rem;
 }
 
 .container {
@@ -66,7 +67,6 @@ body section {
     grid-template-columns: 2fr auto 1fr;
     align-items: baseline;
     column-gap: 2px;
-
 }
 
 .item {
@@ -74,24 +74,10 @@ body section {
 
 }
 
-.item-descricao {
-    text-align: justify;
-    font-weight: 600;
-    font-size: 8px;
-    font-family: "Raleway", Arial, sans-serif;
-    font-optical-sizing: auto;
-    color: #231E1F;
-    margin: 0;
-    width: 100%;
-    line-height: 8px;
-
-
-}
-
 .item-cod,
 .item-preco,
 .separador {
-    font-size: .8rem;
+    font-size: clamp(.9rem, 4vw, 1.7rem);
     font-weight: 600;
     letter-spacing: -0.8px;
     font-family: "Barlow Condensed", sans-serif;
@@ -102,12 +88,31 @@ body section {
 }
 
 .item-cod {
-    line-height: 12px;
+    line-height: 1rem;
+}
+
+.item-descricao {
+    text-align: justify;
+    font-weight: 600;
+    font-size: clamp(.6rem, 2.5vw, 1.2rem);
+    font-family: "Raleway", Arial, sans-serif;
+    font-optical-sizing: auto;
+    color: #231E1F;
+    margin: 0;
+    width: 100%;
+    line-height: .8rem;
 }
 
 .flex {
     display: flex;
     flex-direction: column;
+}
+
+.vegetariano {
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .p-relative {
@@ -124,6 +129,19 @@ body section {
 .icone-2 {
     width: 20px;
     margin-right: -10px;
+}
+
+.item-premium {
+    position: relative;
+}
+
+.item-premium .item-cod {
+    margin-left: 40px;
+}
+
+.icone-3 {
+    width: 40px;
+    position: absolute;
 }
 
 .m-negative {
@@ -209,27 +227,25 @@ body section {
 
 }
 
-@media screen and (max-width: 400px) {}
-
 
 @media screen and (min-width: 768px) {
     .item-descricao {
-        font-size: .9rem;
-        line-height: 1rem;
+        margin-top: .4rem;
+        line-height: 1.2rem;
     }
 
     .item {
         margin-bottom: 1rem;
     }
 
-    .item-cod,
+    /*  .item-cod,
     .item-preco,
     .separador {
         font-size: 1.5rem;
     }
-
+ */
     .item-cod {
-        line-height: 28px;
+        line-height: 2rem;
     }
 
     .icone-1 {
@@ -242,8 +258,8 @@ body section {
         margin-right: -10px;
     }
 
-    .item-cod small {
+    /*   .item-cod small {
         font-size: 1.2rem;
-    }
+    } */
 
 }
