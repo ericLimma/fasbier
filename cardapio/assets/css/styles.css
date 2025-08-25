@@ -44,6 +44,27 @@ body section {
     padding: 0 1rem;
 }
 
+.destaque {
+    border-left: 3px solid var(--vermelho);
+    padding-left: 10px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.destaque::before {
+    content: "Novidade";
+    position: absolute;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    bottom: 0;
+    right: 0;
+    padding: .1rem;
+    border-radius: 4px;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: .4rem;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -258,8 +279,15 @@ body section {
         margin-right: -10px;
     }
 
-    /*   .item-cod small {
+    .item-descricao small {
         font-size: 1.2rem;
-    } */
+        font-family: "Raleway", Arial, sans-serif;
+        font-weight: 700;
+    }
+
+    .destaque::before {
+        padding: .5rem 1rem;
+        font-size: .8rem;
+    }
 
 }
