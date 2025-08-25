@@ -86,10 +86,10 @@
 .valor-adcional {
     background-color: var(--vermelho);
     color: var(--branco);
-    padding: 5px;
-    font-size: clamp(.9rem, 2vw, 1.7rem);
+    padding: .1rem 0;
+    font-size: clamp(.6rem, 2vw, 1.7rem);
     margin-left: auto;
-    margin-top: -15px;
+    margin-top: -10px;
     width: 40%;
     max-width: 110px;
     border-radius: 1rem;

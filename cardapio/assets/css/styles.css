@@ -152,18 +152,20 @@ body section {
     margin-right: -10px;
 }
 
+.icone-3 {
+    width: 25px;
+    position: absolute;
+    top: 5px;
+}
+
 .item-premium {
     position: relative;
 }
 
 .item-premium .item-cod {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
-.icone-3 {
-    width: 40px;
-    position: absolute;
-}
 
 .m-negative {
     margin-top: -24px;
@@ -277,6 +279,15 @@ body section {
     .icone-2 {
         width: 40px;
         margin-right: -10px;
+    }
+
+    .icone-3 {
+        width: 40px;
+        top: 1rem;
+    }
+
+    .item-premium .item-cod {
+        margin-left: 45px;
     }
 
     .item-descricao small {
