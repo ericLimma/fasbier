@@ -23,7 +23,18 @@ body section {
     margin-bottom: 0;
 }
 
-.executivo,
+.executivo {
+    max-width: 780px;
+    margin: auto;
+}
+
+.executivo img {
+    width: 100%;
+    margin: auto;
+    object-fit: contain;
+}
+
+
 .entradas,
 .saladas,
 .pratos-tipicos,
