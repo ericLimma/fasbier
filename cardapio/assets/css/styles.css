@@ -23,19 +23,19 @@ body section {
     margin-bottom: 0;
 }
 
-.executivo {
+.menu-section {
     max-width: 780px;
-    margin: auto;
+    margin: 36px auto;
 }
 
-.executivo img {
+.menu-section img {
     width: 100%;
     margin: auto;
     object-fit: contain;
 }
 
 
-.entradas,
+
 .saladas,
 .pratos-tipicos,
 .peixes,
