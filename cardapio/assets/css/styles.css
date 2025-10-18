@@ -17,8 +17,6 @@
     box-sizing: border-box;
 }
 
-
-
 body section {
     margin-bottom: 0;
 }
@@ -33,8 +31,6 @@ body section {
     margin: auto;
     object-fit: contain;
 }
-
-
 
 .saladas,
 .pratos-tipicos,
@@ -272,12 +268,7 @@ body section {
         margin-bottom: 1rem;
     }
 
-    /*  .item-cod,
-    .item-preco,
-    .separador {
-        font-size: 1.5rem;
-    }
- */
+
     .item-cod {
         line-height: 2rem;
     }
