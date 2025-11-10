@@ -54,6 +54,7 @@ body section {
 }
 
 
+
 .destaque::before {
     content: "Novidade";
     position: absolute;
