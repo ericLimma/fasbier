@@ -27,15 +27,27 @@ body section {
 }
 
 .menu-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
+.title-sobremesas {
+    background: url('../img/sobremesa.webp') no-repeat center top;
+    background-size: cover;
+    height: 100px;
+    position: relative;
+    margin-bottom: 0;
+    z-index: 1;
+}
 
-.parmegianas,
-.sobremesas {
+.title-sobremesas h2 {
+    position: absolute;
+    top: 15px;
+}
+
+.parmegianas {
     width: 100%;
     max-width: 780px;
     margin: 36px auto;
@@ -236,23 +248,6 @@ body section {
     display: none;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-
-    100% {
-        transform: translateY(0px);
-
-    }
-
-}
-
-
 @media screen and (min-width: 768px) {
     .item-descricao {
         margin-top: .4rem;
@@ -298,4 +293,7 @@ body section {
         font-size: .8rem;
     }
 
+    .title-sobremesas {
+        height: 210px;
+    }
 }
